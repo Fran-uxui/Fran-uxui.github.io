@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="seccion">
+        <div class="inicio">
+            
+            <div class="home-left">
+                <div class="row">
+                <div class="photo"></div>
+                <div class="title">
+                  <h1 class="title1">Fran.</h1>
+                  <h1 class="title2">UX/UI Designer.</h1>
+                </div>
+                </div>
+            </div>
+            <div class="home-right">
+                <h2>What do you want to see?</h2>
+                <div class="boxes">
+                 <button id="process-btn">Process</button>
+                 <button id="clients-btn">Clients</button>
+                 <button id="about-btn">About me</button>
+                 <button id="contact-btn">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="process">
+    <h1>Process</h1>
+    <a href="facebook.com">facebnooook</a>
+    </section>
+    <section class="clients">
+    <h1>Clients</h1>
+    </section>
+     <section class="about-me">
+     <h1>About me</h1>
+     </section>
+    <section class="contact">
+    <h1>Contact</h1>
+    <a href="facebook.com">facebnooook</a>
+    </section>
+   
+   <script>
+    
+        function homefunc() {
+          var x = document.querySelector('.inicio');
+          x.classList.add('chikito');
+          var x = document.querySelector('.home-left');
+          x.classList.add('invisible');
+          var x = document.querySelector('.home-right');
+          x.classList.add('invisible');
+          setTimeout(() => { var x = document.querySelector('.seccion');
+          x.classList.add('nodisp'); }, 1200);
+        }
+        function processfunc() {
+           setTimeout(() => { var x = document.querySelector('.process');
+          x.classList.add('corrector'); }, 1200);
+        }
+        function clientfunc() {
+            var x = document.querySelector('.process');
+          x.classList.add('nodisp');
+          setTimeout(() => { var x = document.querySelector('.clients');
+          x.classList.add('corrector'); }, 1200);
+        }
+        function aboutfunc() {
+          var x = document.querySelector('.clients');
+          x.classList.add('nodisp');
+          setTimeout(() => { var x = document.querySelector('.about-me');
+          x.classList.add('corrector'); }, 1200);
+            } 
+        function contactfunc() {
+          var x = document.querySelector('.about-me');
+          x.classList.add('nodisp');   
+          setTimeout(() => { var x = document.querySelector('.contact');
+          x.classList.add('corrector'); }, 1200);
+        }
+      const proc = document.getElementById('process-btn');
+      proc.addEventListener('click', homefunc, false);
+        proc.addEventListener('click', processfunc, false);
+      const cli = document.getElementById('clients-btn');
+        cli.addEventListener('click', homefunc, false);
+        cli.addEventListener('click', clientfunc, false);
+      const abt = document.getElementById('about-btn');
+        abt.addEventListener('click', aboutfunc, false);
+        abt.addEventListener('click', homefunc, false);
+        abt.addEventListener('click', clientfunc, false);
+       const cnt = document.getElementById('contact-btn');
+        cnt.addEventListener('click', aboutfunc, false);
+        cnt.addEventListener('click', homefunc, false);
+        cnt.addEventListener('click', clientfunc, false);
+        cnt.addEventListener('click', contactfunc, false);
+    </script>
+</body>
+</html>
