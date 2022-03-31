@@ -16,8 +16,8 @@
                 <div class="row">
                 <div class="photo"></div>
                 <div class="title">
-                  <h1 class="title1">Fran.</h1>
-                  <h1 class="title2">UX/UI Designer.</h1>
+                  <h1>Fran.</h1>
+                  <h2>UX/UI Designer.</h2>
                 </div>
                 </div>
             </div>
@@ -33,16 +33,55 @@
         </div>
     </div>
     <section class="process">
-    <h1>Process</h1>
-    <a href="facebook.com">facebnooook</a>
+      <button id="process-goback">goback</button>
+      <div class="content">
+    <h2>Process.</h2> 
+    <div class="row">
+    <div class="card">
+      <h3>Research.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Brainstorm.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Unify Concepts.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Sketch.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Wireframe.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Tech Reseach.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Coding.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+    <div class="card">
+      <h3>Debug + Polish.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+    </div>
+  </div>
+</div>
     </section>
     <section class="clients">
+      <button id="clients-goback">goback</button>
     <h1>Clients</h1>
     </section>
      <section class="about-me">
+      <button id="about-goback">goback</button>
      <h1>About me</h1>
      </section>
     <section class="contact">
+      <button id="contact-goback">goback</button>
     <h1>Contact</h1>
     <a href="facebook.com">facebnooook</a>
     </section>
@@ -81,6 +120,43 @@
           setTimeout(() => { var x = document.querySelector('.contact');
           x.classList.add('corrector'); }, 1200);
         }
+
+        function homefuncback() {
+          var x = document.querySelector('.seccion');
+          x.classList.remove('nodisp');
+          setTimeout(() => { var x = document.querySelector('.inicio');
+          x.classList.remove('chikito'); }, 0);
+          setTimeout(() => { var x = document.querySelector('.home-left');
+          x.classList.remove('invisible');}, 700);
+          setTimeout(() => { var x = document.querySelector('.home-right');
+          x.classList.remove('invisible');}, 700);
+          
+
+        }
+        function processfuncback() {
+           var x = document.querySelector('.process');
+          x.classList.remove('corrector');
+        }
+
+        function clientfuncback() {
+          var x = document.querySelector('.clients');
+          x.classList.remove('corrector');
+          setTimeout(() => {  var x = document.querySelector('.process');
+          x.classList.remove('nodisp');}, 1200);
+        }
+        function aboutfuncback() {
+         var x = document.querySelector('.about-me');
+          x.classList.remove('corrector');
+          setTimeout(() => { var x = document.querySelector('.clients');
+          x.classList.remove('nodisp');}, 1200);
+            } 
+        function contactfuncback() {
+          var x = document.querySelector('.contact');
+          x.classList.remove('corrector'); 
+          setTimeout(() => {  var x = document.querySelector('.about-me');
+          x.classList.remove('nodisp');}, 1200);
+        }
+
       const proc = document.getElementById('process-btn');
       proc.addEventListener('click', homefunc, false);
         proc.addEventListener('click', processfunc, false);
@@ -96,6 +172,22 @@
         cnt.addEventListener('click', homefunc, false);
         cnt.addEventListener('click', clientfunc, false);
         cnt.addEventListener('click', contactfunc, false);
+      const procback = document.getElementById('process-goback');
+      procback.addEventListener('click', homefuncback, false);
+        procback.addEventListener('click', processfuncback, false);
+
+      const cliback = document.getElementById('clients-goback');
+        cliback.addEventListener('click', homefuncback, false);
+        cliback.addEventListener('click', clientfuncback, false);
+      const abtback = document.getElementById('about-goback');
+        abtback.addEventListener('click', aboutfuncback, false);
+        abtback.addEventListener('click', homefuncback, false);
+        abtback.addEventListener('click', clientfuncback, false);
+       const cntback = document.getElementById('contact-goback');
+        cntback.addEventListener('click', aboutfuncback, false);
+        cntback.addEventListener('click', homefuncback, false);
+        cntback.addEventListener('click', clientfuncback, false);
+        cntback.addEventListener('click', contactfuncback, false);
     </script>
 </body>
 </html>

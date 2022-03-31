@@ -34,12 +34,10 @@ body {
     background: #191919;
     overflow: hidden;
     z-index: 1;
-    transition: all 0.5s 0.1s ease-in-out, transform 0.5s 0.8s ease-in-out, color 0.2s ease-in-out, border-radius 0.3s 0.4s  ease-in-out;
+    transition: all 0.6s 500ms ease-out, transform 0.5s ease-out, color 0.6s 1s ease-out, border-radius 0.8s 0.5s  ease-out;
     display: grid;
-    
     color: white;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 
 .botonnn {
@@ -52,8 +50,10 @@ body {
     width: 50px;
     transform: translateY(-1000px);
     border-radius: 50%;
+    transition: all 0.5s 0.1s ease-in, transform 0.5s 0.8s ease-in, color 0.2s ease-in, border-radius 0.3s 0.3s  ease-in;
 }
-.row
+
+.home-left > .row
 {
     display: flex;
     flex-direction: row;
@@ -72,10 +72,11 @@ body {
     grid-auto-flow: column;
     place-items: center;
     gap: 0px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s 300ms ease-out;
+    opacity: 100%;
 }
 
-.title1 {
+h1{
     
     font-size: 56px;
     margin: 0;
@@ -89,20 +90,17 @@ font-style: normal;
 max-width: 83.33333%;
      }
 
-.title2 {
+h2 {
     font-size: 40px;
     margin: 0;
     color: #f4f4f4;
-}
-
-h2 {
-    font-size: 40px;
     text-align: center;
-    line-height: 0;
-    margin-top: 0;
     letter-spacing: -.005em;
 }
 
+h3 {
+    font-size: 30px;
+}
 
 .boxes {
     display: flex;
@@ -133,20 +131,30 @@ cursor: pointer;
     display: grid;
     grid-auto-flow: row;
     place-content: center left;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s 300ms ease-out;
+    opacity: 100%;
 }
-.home-right > h2 {
-    margin-bottom: 1em;
-}
+
 
 .invisible {
     opacity: 0%;
+    transition: all 300ms ease-in;
+    
 }
 
 .nodisp {
     display: none;
 }
 
+.photo {
+    background-image: url(img/photo.jpg);
+}
+
+.home-left > .row > .title {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
 
 /* process */
 section {
@@ -161,6 +169,41 @@ section {
 .process {
     background: #E8E8E8;
     z-index: -3;
+}
+.process > .content > h2 { 
+    color: #191919;
+    margin-bottom: 0.5em;
+}
+.process > .content {
+    height: 90%;
+   display: flex;
+  align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.process > .content >.row >.card {
+    
+    height: 200px;
+    background: #F4F4F4;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    transition: box-shadow 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.process > .content >.row >.card:hover {
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
+}
+.process > .content > .row > .card > p {
+    color: #67666B;
+}
+
+.process > .content > .row {
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    gap: 20px;
 }
 /* process end */
 /* client */
@@ -183,3 +226,8 @@ section {
     
 }
 /* contact  end */
+
+
+
+
+
