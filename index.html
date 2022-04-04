@@ -35,46 +35,58 @@
     <section class="process">
       <button id="process-goback">goback</button>
       <div class="content">
-    <h2>Process.</h2> 
+        <div class="title"><h2>Process.</h2></div>
     <div class="row">
     <div class="card">
       <h3>Research.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>I start taking notes on what are the objectives of the product, and what are the user objectives. 
+        With this information I take a look at similar products and their design over the user behavior.
+        </p>
     </div>
     <div class="card">
       <h3>Brainstorm.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>In this step I think of various funnels for the desired actions of the client (Like buy, download,  leave mail…). Then comes the visual part, I start with the color palette, font, borders, and the main order of things.</p>
     </div>
     <div class="card">
       <h3>Unify Concepts.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>With everything I gathered and designed already, here I make a simple guide of the important things for the sketch. Usually this step is made in a pdf with references and the best ideas. </p>
     </div>
     <div class="card">
       <h3>Sketch.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>In the sketch step I made more than one sketch, depending on the complexity of the project and the amount of content, this is made on paper, but sometimes I make it digitally.</p>
     </div>
     <div class="card">
       <h3>Wireframe.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>Here the final concept is made, taking concepts from the different sketches, with the colors and fonts chosen in the brainstorm step. This is made in a design software like illustrator or figma, and sent for revision.
+      </p>
     </div>
     <div class="card">
       <h3>Tech Reseach.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>Now I know what i have to take from the wireframe and make it to the final website/app, usually there are various ways to do this, depending on the client necessities (if i use a framework and the javascript libraries that i will need).</p>
     </div>
     <div class="card">
       <h3>Coding.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>I make first the html, css and then add everything that was defined in the step before this. </p>
     </div>
     <div class="card">
       <h3>Debug + Polish.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
+      <p>Taking a look in various ways the code I made can be improved, sometimes there are responsive problems, and I have to adjust the css for different screen sizes and if it's portrait screen or landscape.  
+      </p>
     </div>
   </div>
 </div>
     </section>
     <section class="clients">
       <button id="clients-goback">goback</button>
-    <h1>Clients</h1>
+    <div class="content">
+      <div class="title"><h2>Clients.</h2></div>
+      <div class="row">
+      <a class="project" href="#modal"></a>
+      <a class="project" href="#modal"></a>
+      <a class="project" href="#modal"></a>
+      <a class="project" href="#modal"></a>
+    </div>
+    </div>
     </section>
      <section class="about-me">
       <button id="about-goback">goback</button>
@@ -84,7 +96,16 @@
       <button id="contact-goback">goback</button>
     <h1>Contact</h1>
     </section>
-   
+
+    <!-- Modals -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+       <a class="modal-hide" href="#">✕</a>
+     </div>
+     
+     <!-- Modals End -->
+   </div>
    <script>
     
         function homefunc() {

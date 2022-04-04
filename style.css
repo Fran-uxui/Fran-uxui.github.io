@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'SF-Pro-Display';
-    src:  url("font/sf-pro-display_semibold.woff2") format("woff2");
+    src:  url("font/SFProDisplay-Semibold-compressed.woff2") format("woff2");
   }
 
   * {
@@ -34,7 +34,7 @@ body {
     background: #191919;
     overflow: hidden;
     z-index: 1;
-    transition: all 0.6s 500ms ease-out, transform 0.5s ease-out, color 0.6s 1s ease-out, border-radius 0.8s 0.5s  ease-out;
+    transition: all 0.5s 620ms ease-out, transform 0.5s ease-out, color 0.6s 1s ease-out, border-radius 0.4s 0.55s  ease-out;
     display: grid;
     color: white;
     grid-template-columns: repeat(2, 1fr);
@@ -50,7 +50,7 @@ body {
     width: 50px;
     transform: translateY(-1000px);
     border-radius: 50%;
-    transition: all 0.5s 0.1s ease-in, transform 0.5s 0.8s ease-in, color 0.2s ease-in, border-radius 0.3s 0.3s  ease-in;
+    transition: all 0.5s 0.1s ease-in, transform 0.5s 0.8s ease-in, color 0.2s ease-in, border-radius 0.3s 0.35s  ease-in;
 }
 
 .home-left > .row
@@ -170,9 +170,16 @@ section {
     background: #E8E8E8;
     z-index: -3;
 }
-.process > .content > h2 { 
+.process > .content > .title > h2 { 
     color: #191919;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.process > .content > .title { 
+    width: 80%;
+    color: #191919;
+    
+    
 }
 .process > .content {
     height: 90%;
@@ -184,18 +191,19 @@ section {
 }
 .process > .content >.row >.card {
     
-    height: 200px;
+    height: 170px;
     background: #F4F4F4;
     padding: 15px 15px 15px 15px;
     border-radius: 15px;
     transition: box-shadow 250ms ease-in-out;
-    cursor: pointer;
+    cursor: text;
 }
 
 .process > .content >.row >.card:hover {
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
 }
 .process > .content > .row > .card > p {
+    margin-top: 5px;
     color: #67666B;
 }
 
@@ -208,9 +216,44 @@ section {
 /* process end */
 /* client */
 .clients {
-    background: rgb(25, 0, 255);
+    background: #E8E8E8;;
     z-index: -4;
 }
+
+.clients > .content > .title > h2 { 
+    color: #191919;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.clients > .content > .title { 
+    width: 80%;
+    color: #191919;
+} 
+.clients > .content {
+    height: 90%;
+   display: flex;
+  align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.clients > .content > .row{
+  width: 80%;
+   display: flex;
+  align-items: center;
+   justify-content: center;
+ height: 50%;
+   gap: 1% ;
+}
+
+.clients > .content > .row > .project {
+    height: 100%;
+    width: 25%;
+    background: red;
+    border-radius: 15px;
+  }
+
+
 /* client */
 /* about-me  */
 .about-me {
@@ -231,3 +274,74 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: modal-show 0.5s 1 forwards;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 480px;
+    height: 180px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .modal:target {
+    display: flex;
+  }
+  
+  .modal-hide {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  @keyframes modal-show {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+
+
+/* MODAL END */
