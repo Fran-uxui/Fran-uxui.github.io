@@ -404,4 +404,7 @@ section {
         display: block;
         text-align: center;
     }
+    .home-right {
+        place-content: flex-start;
+    }
 }
