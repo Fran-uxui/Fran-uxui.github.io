@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'SF-Pro-Display';
-    src:  url("font/SFProDisplay-Semibold-compressed.woff2") format("woff2");
+    src:  url("font/SFProDisplay-Semibold.woff2") format("woff2");
   }
 
   * {
@@ -65,6 +65,8 @@ body {
     background: white;
     border-radius: 50%;
     margin-right: 2em;
+    background-image: url(img/photo.jpg);
+    background-size: cover;
 }
 
 .home-left {
@@ -84,7 +86,6 @@ h1{
     color: #f4f4f4;
     letter-spacing: -.005em;
     font-synthesis: none;
--moz-font-feature-settings: 'kern';
 direction: ltr;
 font-style: normal;
 max-width: 83.33333%;
@@ -146,9 +147,6 @@ cursor: pointer;
     display: none;
 }
 
-.photo {
-    background-image: url(img/photo.jpg);
-}
 
 .home-left > .row > .title {
     flex-direction: column;
@@ -156,6 +154,22 @@ cursor: pointer;
     justify-content: center;
 }
 
+.goback {
+    font-family: 'SF-Pro-Display',sans-serif;
+    font-size: 22px;
+    background: none;
+    color: #313031;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+    transition: all 250ms ease-in-out;
+    text-shadow: 0px 0px black ;
+}
+
+.goback:hover {
+    color: white;
+   text-shadow: 0px 0px 5px black ;
+}
 /* process */
 section {
     position: relative;
@@ -345,3 +359,49 @@ section {
 
 
 /* MODAL END */
+
+
+
+@media screen and (max-width: 600px){
+    .inicio{
+        grid-template-columns: inherit!important;
+    }
+
+    .photo  {
+        width: 75px;
+        height: 75px;
+    }
+    h1{
+     font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 20px;
+       
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px ;
+        overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+    }
+    .process > .content > .row {
+        display:  grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        gap: 20px;
+    }
+    .process > .content > .row > .card { 
+        height: auto;
+    }
+    .boxes {
+        display: block;
+        text-align: center;
+    }
+}
