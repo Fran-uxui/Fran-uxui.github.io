@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'SF-Pro-Display';
-    src:  url("font/SFProDisplay-Semibold.woff2") format("woff2");
+    src:  url("font/SFProDisplay-Semiboldv2.woff2") format("woff2");
   }
 
   * {
@@ -265,7 +265,7 @@ section {
 .clients > .content > .row > .project {
     height: 100%;
     width: 25%;
-    background: rgba(0, 0, 0, 0.603);
+    background: rgba(255, 255, 255, 0.603);
     border-radius: 15px;
   }
 
@@ -419,8 +419,8 @@ section {
 }
 
 .random-shape:after {
-    font-family: FontAwesome;
-    content: "\f111";
+    font-family: 'SF-Pro-Display',sans-serif;
+    content: "°";
 }
 @keyframes shape-1 {
     0% {
@@ -437,7 +437,7 @@ section {
     margin: 1rem;
     color: #0ff1cb;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-2 {
     0% {
@@ -454,7 +454,7 @@ section {
     margin: 8rem;
     color: #0ff1cb;
     font-size: 1.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-3 {
     0% {
@@ -471,7 +471,7 @@ section {
     margin: 3rem;
     color: #0ff1cb;
     font-size: 0.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-4 {
     0% {
@@ -488,7 +488,7 @@ section {
     margin: 10rem;
     color: #0ff1cb;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-5 {
     0% {
@@ -505,7 +505,7 @@ section {
     margin: 9rem;
     color: #0ff1cb;
     font-size: 1.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-6 {
     0% {
@@ -522,7 +522,7 @@ section {
     margin: 5rem;
     color: #0ff1cb;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-7 {
     0% {
@@ -539,7 +539,7 @@ section {
     margin: 9rem;
     color: #06c9a8;
     font-size: 1.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-8 {
     0% {
@@ -556,7 +556,7 @@ section {
     margin: 10rem;
     color: #06c9a8;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-9 {
     0% {
@@ -573,7 +573,7 @@ section {
     margin: 9rem;
     color: #06c9a8;
     font-size: 1.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-10 {
     0% {
@@ -590,7 +590,7 @@ section {
     margin: 3rem;
     color: #0ff1cb;
     font-size: 0.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-11 {
     0% {
@@ -607,7 +607,7 @@ section {
     margin: 6rem;
     color: #06c9a8;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-12 {
     0% {
@@ -624,7 +624,7 @@ section {
     margin: 6rem;
     color: #0ff1cb;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-13 {
     0% {
@@ -641,7 +641,7 @@ section {
     margin: 5rem;
     color: #06c9a8;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-14 {
     0% {
@@ -658,7 +658,7 @@ section {
     margin: 2rem;
     color: #06c9a8;
     font-size: 0.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-15 {
     0% {
@@ -675,7 +675,7 @@ section {
     margin: 2rem;
     color: #06c9a8;
     font-size: 0.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-16 {
     0% {
@@ -692,7 +692,7 @@ section {
     margin: 1rem;
     color: #0ff1cb;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-17 {
     0% {
@@ -709,7 +709,7 @@ section {
     margin: 10rem;
     color: #06c9a8;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-18 {
     0% {
@@ -726,7 +726,7 @@ section {
     margin: 1rem;
     color: #06c9a8;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-19 {
     0% {
@@ -743,7 +743,7 @@ section {
     margin: 5rem;
     color: #06c9a8;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-20 {
     0% {
@@ -760,7 +760,7 @@ section {
     margin: 3rem;
     color: #06c9a8;
     font-size: 0.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-21 {
     0% {
@@ -777,7 +777,7 @@ section {
     margin: 2rem;
     color: #0ff1cb;
     font-size: 0.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-22 {
     0% {
@@ -794,7 +794,7 @@ section {
     margin: 1rem;
     color: #06c9a8;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-23 {
     0% {
@@ -811,7 +811,7 @@ section {
     margin: 8rem;
     color: #0ff1cb;
     font-size: 1.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-24 {
     0% {
@@ -828,7 +828,7 @@ section {
     margin: 5rem;
     color: #06c9a8;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-25 {
     0% {
@@ -845,7 +845,7 @@ section {
     margin: 10rem;
     color: #0ff1cb;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-26 {
     0% {
@@ -862,7 +862,7 @@ section {
     margin: 1rem;
     color: #06c9a8;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-27 {
     0% {
@@ -879,7 +879,7 @@ section {
     margin: 10rem;
     color: #0ff1cb;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-28 {
     0% {
@@ -896,7 +896,7 @@ section {
     margin: 6rem;
     color: #06c9a8;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-29 {
     0% {
@@ -913,7 +913,7 @@ section {
     margin: 8rem;
     color: #0ff1cb;
     font-size: 1.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-30 {
     0% {
@@ -930,7 +930,7 @@ section {
     margin: 5rem;
     color: #0ff1cb;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-31 {
     0% {
@@ -947,7 +947,7 @@ section {
     margin: 5rem;
     color: #06c9a8;
     font-size: 1rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-32 {
     0% {
@@ -964,7 +964,7 @@ section {
     margin: 7rem;
     color: #06c9a8;
     font-size: 1.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-33 {
     0% {
@@ -981,7 +981,7 @@ section {
     margin: 6rem;
     color: #0ff1cb;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-34 {
     0% {
@@ -998,7 +998,7 @@ section {
     margin: 7rem;
     color: #06c9a8;
     font-size: 1.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-35 {
     0% {
@@ -1015,7 +1015,7 @@ section {
     margin: 6rem;
     color: #06c9a8;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-36 {
     0% {
@@ -1032,7 +1032,7 @@ section {
     margin: 8rem;
     color: #06c9a8;
     font-size: 1.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-37 {
     0% {
@@ -1049,7 +1049,7 @@ section {
     margin: 3rem;
     color: #0ff1cb;
     font-size: 0.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-38 {
     0% {
@@ -1066,7 +1066,7 @@ section {
     margin: 3rem;
     color: #0ff1cb;
     font-size: 0.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-39 {
     0% {
@@ -1083,7 +1083,7 @@ section {
     margin: 8rem;
     color: #06c9a8;
     font-size: 1.6rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-40 {
     0% {
@@ -1100,7 +1100,7 @@ section {
     margin: 2rem;
     color: #06c9a8;
     font-size: 0.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-41 {
     0% {
@@ -1117,7 +1117,7 @@ section {
     margin: 4rem;
     color: #0ff1cb;
     font-size: 0.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-42 {
     0% {
@@ -1134,7 +1134,7 @@ section {
     margin: 7rem;
     color: #06c9a8;
     font-size: 1.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-43 {
     0% {
@@ -1151,7 +1151,7 @@ section {
     margin: 1rem;
     color: #0ff1cb;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-44 {
     0% {
@@ -1168,7 +1168,7 @@ section {
     margin: 1rem;
     color: #06c9a8;
     font-size: 0.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-45 {
     0% {
@@ -1185,7 +1185,7 @@ section {
     margin: 2rem;
     color: #06c9a8;
     font-size: 0.4rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-46 {
     0% {
@@ -1202,7 +1202,7 @@ section {
     margin: 4rem;
     color: #0ff1cb;
     font-size: 0.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-47 {
     0% {
@@ -1219,7 +1219,7 @@ section {
     margin: 6rem;
     color: #06c9a8;
     font-size: 1.2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-48 {
     0% {
@@ -1236,7 +1236,7 @@ section {
     margin: 10rem;
     color: #06c9a8;
     font-size: 2rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-49 {
     0% {
@@ -1253,7 +1253,7 @@ section {
     margin: 9rem;
     color: #06c9a8;
     font-size: 1.8rem;
-    content: '\f111';
+    content: '°';
 }
 @keyframes shape-50 {
     0% {
@@ -1270,7 +1270,7 @@ section {
     margin: 9rem;
     color: #0ff1cb;
     font-size: 1.8rem;
-    content: '\f111';
+    content: '°';
 }
 
 
@@ -1290,3 +1290,4 @@ section {
 .eat::after{
     color: #32F096!important;
 }
+
