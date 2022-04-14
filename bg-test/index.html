@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="UX/UI Portfolio from Franco Cañas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+    <title>Fran - UX/UI</title>
+    
+</head>
+<body>
+
+    <div class="seccion">
+        <div class="inicio">
+            
+            <div class="home-left">
+                <div class="row">
+                <div class="photo"></div>
+                <div class="title">
+                  <h1>Fran.</h1>
+                  <h2>UX/UI Designer.</h2>
+                </div>
+                </div>
+            </div>
+            <div class="home-right">
+                <h2>What do you want to see?</h2>
+                <div class="boxes">
+                 <button id="process-btn">Process</button>
+                 <button id="clients-btn">Clients</button>
+                 <button id="about-btn">About me</button>
+                 <button id="contact-btn">Contact</button>
+                </div>
+            </div>
+            </div>
+
+    </div>
+    <section class="process">
+      
+      <button id="process-goback" class="goback">{ Go Back</button>
+        
+      <div class="content">
+        <div class="title"><h2>Process.</h2></div>
+    <div class="row">
+    <div class="card">
+      <h3>Research.</h3>
+      <p>I start taking notes on what are the objectives of the product, and what are the user objectives. 
+        With this information I take a look at similar products and their design over the user behavior.
+        </p>
+    </div>
+    <div class="card">
+      <h3>Brainstorm.</h3>
+      <p>In this step I think of various funnels for the desired actions of the client (Like buy, download,  leave mail…). Then comes the visual part, I start with the color palette, font, borders, and the main order of things.</p>
+    </div>
+    <div class="card">
+      <h3>Unify Concepts.</h3>
+      <p>With everything I gathered and designed already, here I make a simple guide of the important things for the sketch. Usually this step is made in a pdf with references and the best ideas. </p>
+    </div>
+    <div class="card">
+      <h3>Sketch.</h3>
+      <p>In the sketch step I made more than one sketch, depending on the complexity of the project and the amount of content, this is made on paper, but sometimes I make it digitally.</p>
+    </div>
+    <div class="card">
+      <h3>Wireframe.</h3>
+      <p>Here the final concept is made, taking concepts from the different sketches, with the colors and fonts chosen in the brainstorm step. This is made in a design software like illustrator or figma, and sent for revision.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Tech Reseach.</h3>
+      <p>Now I know what i have to take from the wireframe and make it to the final website/app, usually there are various ways to do this, depending on the client necessities (if i use a framework and the javascript libraries that i will need).</p>
+    </div>
+    <div class="card">
+      <h3>Coding.</h3>
+      <p>I make first the html, css and then add everything that was defined in the step before this. </p>
+    </div>
+    <div class="card">
+      <h3>Debug + Polish.</h3>
+      <p>Taking a look in various ways the code I made can be improved, sometimes there are responsive problems, and I have to adjust the css for different screen sizes and if it's portrait screen or landscape.  
+      </p>
+    </div>
+  </div>
+</div>
+    </section>
+    <section class="clients">
+      <button id="clients-goback" class="goback">{ Go Back</button>
+    <div class="content">
+      <div class="title"><h2>Clients.</h2></div>
+      <div class="row">
+      <a class="project proj1" href="#modal"></a>
+      <a class="project proj2" href="#modal"></a>
+      <a class="project proj3" href="#modal"></a>
+      <a class="project proj4" href="#modal"></a>
+    </div>
+    <div class="shape">
+    </div>
+    </div>
+    </section>
+     <section class="about-me">
+      <button id="about-goback" class="goback">{ Go Back</button>
+     <h1>About me</h1>
+     </section>
+    <section class="contact">
+      <button id="contact-goback" class="goback">{ Go Back</button>
+    <h1>Contact</h1>
+    </section>
+
+    <!-- Modals -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+       <a class="modal-hide" href="#">✕</a>
+     </div>
+     
+     <!-- Modals End -->
+   </div>
+   <script>
+    
+        function homefunc() {
+          var x = document.querySelector('.inicio');
+          x.classList.add('chikito');
+          var x = document.querySelector('.home-left');
+          x.classList.add('invisible');
+          var x = document.querySelector('.home-right');
+          x.classList.add('invisible');
+          setTimeout(() => { var x = document.querySelector('.seccion');
+          x.classList.add('nodisp'); }, 1200);
+        }
+        function processfunc() {
+           setTimeout(() => { var x = document.querySelector('.process');
+          x.classList.add('corrector'); }, 1200);
+        }
+        function clientfunc() {
+            var x = document.querySelector('.process');
+          x.classList.add('nodisp');
+          setTimeout(() => { var x = document.querySelector('.clients');
+          x.classList.add('corrector'); }, 1200);
+        }
+        function aboutfunc() {
+          var x = document.querySelector('.clients');
+          x.classList.add('nodisp');
+          setTimeout(() => { var x = document.querySelector('.about-me');
+          x.classList.add('corrector'); }, 1200);
+            } 
+        function contactfunc() {
+          var x = document.querySelector('.about-me');
+          x.classList.add('nodisp');   
+          setTimeout(() => { var x = document.querySelector('.contact');
+          x.classList.add('corrector'); }, 1200);
+        }
+
+        function homefuncback() {
+          var x = document.querySelector('.seccion');
+          x.classList.remove('nodisp');
+          setTimeout(() => { var x = document.querySelector('.inicio');
+          x.classList.remove('chikito'); }, 0);
+          setTimeout(() => { var x = document.querySelector('.home-left');
+          x.classList.remove('invisible');}, 700);
+          setTimeout(() => { var x = document.querySelector('.home-right');
+          x.classList.remove('invisible');}, 700);
+          
+
+        }
+        function processfuncback() {
+           var x = document.querySelector('.process');
+          x.classList.remove('corrector');
+        }
+
+        function clientfuncback() {
+          var x = document.querySelector('.clients');
+          x.classList.remove('corrector');
+          setTimeout(() => {  var x = document.querySelector('.process');
+          x.classList.remove('nodisp');}, 1200);
+        }
+        function aboutfuncback() {
+         var x = document.querySelector('.about-me');
+          x.classList.remove('corrector');
+          setTimeout(() => { var x = document.querySelector('.clients');
+          x.classList.remove('nodisp');}, 1200);
+            } 
+        function contactfuncback() {
+          var x = document.querySelector('.contact');
+          x.classList.remove('corrector'); 
+          setTimeout(() => {  var x = document.querySelector('.about-me');
+          x.classList.remove('nodisp');}, 1200);
+        }
+
+      const proc = document.getElementById('process-btn');
+      proc.addEventListener('click', homefunc, false);
+        proc.addEventListener('click', processfunc, false);
+      const cli = document.getElementById('clients-btn');
+        cli.addEventListener('click', homefunc, false);
+        cli.addEventListener('click', clientfunc, false);
+      const abt = document.getElementById('about-btn');
+        abt.addEventListener('click', aboutfunc, false);
+        abt.addEventListener('click', homefunc, false);
+        abt.addEventListener('click', clientfunc, false);
+       const cnt = document.getElementById('contact-btn');
+        cnt.addEventListener('click', aboutfunc, false);
+        cnt.addEventListener('click', homefunc, false);
+        cnt.addEventListener('click', clientfunc, false);
+        cnt.addEventListener('click', contactfunc, false);
+      const procback = document.getElementById('process-goback');
+      procback.addEventListener('click', homefuncback, false);
+        procback.addEventListener('click', processfuncback, false);
+
+      const cliback = document.getElementById('clients-goback');
+        cliback.addEventListener('click', homefuncback, false);
+        cliback.addEventListener('click', clientfuncback, false);
+      const abtback = document.getElementById('about-goback');
+        abtback.addEventListener('click', aboutfuncback, false);
+        abtback.addEventListener('click', homefuncback, false);
+        abtback.addEventListener('click', clientfuncback, false);
+       const cntback = document.getElementById('contact-goback');
+        cntback.addEventListener('click', aboutfuncback, false);
+        cntback.addEventListener('click', homefuncback, false);
+        cntback.addEventListener('click', clientfuncback, false);
+        cntback.addEventListener('click', contactfuncback, false);
+    </script>
+
+    
+    <script>
+    $(document).ready(function() {
+
+      var html = '';
+      for (var i = 1; i <= 50; i++) {
+        html += '<div class="shape-container--' + i + ' shape-animation"><div class="random-shape"></div></div>';
+      }
+      document.querySelector('.shape').innerHTML += html;
+      
+      });
+      $(".proj1").hover(function(){
+      $(".random-shape").addClass("hifu");
+      }, function() {
+    $(".random-shape").removeClass("hifu");
+
+  });
+      $(".proj2").hover(function(){
+      $(".random-shape").addClass("profit");
+      }, function() {
+    $(".random-shape").removeClass("profit");
+
+  });
+      $(".proj3").hover(function(){
+      $(".random-shape").addClass("cabo");
+      }, function() {
+    $(".random-shape").removeClass("cabo");
+
+  });
+      $(".proj4").hover(function(){
+      $(".random-shape").addClass("eat");
+      }, function() {
+    $(".random-shape").removeClass("eat");
+});
+      
+      
+     /* function shapes() {
+        var a = document.querySelector('.random-shape');
+          a.classList.add('otro');
+      }
+      function shapesout() {
+        var a = document.querySelector('.random-shape');
+          a.classList.remove('otro');
+      }
+
+      var clientes = document.querySelector('.project');
+
+      clientes.addEventListener('mouseover', shapes);
+      clientes.addEventListener('mouseout', shapesout); */
+</script>
+</body>
+</html>
