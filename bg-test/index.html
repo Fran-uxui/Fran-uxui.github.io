@@ -116,6 +116,41 @@
      
      <!-- Modals End -->
    </div>
+
+   <script>
+    $(document).ready(function() {
+
+      var html = '';
+      for (var i = 1; i <= 50; i++) {
+        html += '<div class="shape-container--' + i + ' shape-animation"><div class="random-shape"></div></div>';
+      }
+      document.querySelector('.shape').innerHTML += html;
+      
+      });
+      $(".proj1").hover(function(){
+      $(".random-shape").addClass("hifu");
+      }, function() {
+    $(".random-shape").removeClass("hifu");
+
+  });
+      $(".proj2").hover(function(){
+      $(".random-shape").addClass("profit");
+      }, function() {
+    $(".random-shape").removeClass("profit");
+
+  });
+      $(".proj3").hover(function(){
+      $(".random-shape").addClass("cabo");
+      }, function() {
+    $(".random-shape").removeClass("cabo");
+
+  });
+      $(".proj4").hover(function(){
+      $(".random-shape").addClass("eat");
+      }, function() {
+    $(".random-shape").removeClass("eat");
+});
+</script>
    <script>
     
         function homefunc() {
@@ -221,54 +256,5 @@
     </script>
 
     
-    <script>
-    $(document).ready(function() {
-
-      var html = '';
-      for (var i = 1; i <= 50; i++) {
-        html += '<div class="shape-container--' + i + ' shape-animation"><div class="random-shape"></div></div>';
-      }
-      document.querySelector('.shape').innerHTML += html;
-      
-      });
-      $(".proj1").hover(function(){
-      $(".random-shape").addClass("hifu");
-      }, function() {
-    $(".random-shape").removeClass("hifu");
-
-  });
-      $(".proj2").hover(function(){
-      $(".random-shape").addClass("profit");
-      }, function() {
-    $(".random-shape").removeClass("profit");
-
-  });
-      $(".proj3").hover(function(){
-      $(".random-shape").addClass("cabo");
-      }, function() {
-    $(".random-shape").removeClass("cabo");
-
-  });
-      $(".proj4").hover(function(){
-      $(".random-shape").addClass("eat");
-      }, function() {
-    $(".random-shape").removeClass("eat");
-});
-      
-      
-     /* function shapes() {
-        var a = document.querySelector('.random-shape');
-          a.classList.add('otro');
-      }
-      function shapesout() {
-        var a = document.querySelector('.random-shape');
-          a.classList.remove('otro');
-      }
-
-      var clientes = document.querySelector('.project');
-
-      clientes.addEventListener('mouseover', shapes);
-      clientes.addEventListener('mouseout', shapesout); */
-</script>
 </body>
 </html>
