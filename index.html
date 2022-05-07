@@ -33,10 +33,13 @@
                  <button id="contact-btn">Contact</button>
                 </div>
             </div>
-        </div>
+            </div>
+
     </div>
     <section class="process">
+      
       <button id="process-goback" class="goback">{ Go Back</button>
+        
       <div class="content">
         <div class="title"><h2>Process.</h2></div>
     <div class="row">
@@ -84,16 +87,25 @@
     <div class="content">
       <div class="title"><h2>Clients.</h2></div>
       <div class="row">
-      <a class="project" href="#modal"></a>
-      <a class="project" href="#modal"></a>
-      <a class="project" href="#modal"></a>
-      <a class="project" href="#modal"></a>
+      <a class="project proj1" href="#modal"></a>
+      <a class="project proj2" href="#modal"></a>
+      <a class="project proj3" href="#modal"></a>
+      <a class="project proj4" href="#modal"></a>
+    </div>
+    <div class="shape">
     </div>
     </div>
     </section>
      <section class="about-me">
       <button id="about-goback" class="goback">{ Go Back</button>
-     <h1>About me</h1>
+     
+    <div class="content">
+      <div class="title"><h2>About me.</h2></div>
+      <div class="row">
+      <div class="img-about"><h2>foto</h2></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, facilis! Aliquam ab ipsum cum nam necessitatibus deleniti esse adipisci sapiente praesentium molestias? Nihil eveniet repudiandae unde ut at omnis, laudantium quidem! Alias, vel asperiores! Quae ducimus quasi veniam iste at facere? Ab dolor in magnam quae. Quidem enim aspernatur excepturi quisquam beatae dolorum, reprehenderit aperiam, hic quam alias quo? Fuga et iste quaerat numquam earum. Aspernatur suscipit quasi debitis animi, non ea vel ullam quod illo cumque dolore at? Illum iure sint voluptate quis placeat, delectus aliquam quia voluptas dolorum nihil vero beatae explicabo officiis hic, doloribus aspernatur officia modi?</p>
+    </div>
+  </div>
      </section>
     <section class="contact">
       <button id="contact-goback" class="goback">{ Go Back</button>
@@ -109,108 +121,7 @@
      
      <!-- Modals End -->
    </div>
-   <script>
-    
-        function homefunc() {
-          var x = document.querySelector('.inicio');
-          x.classList.add('chikito');
-          var x = document.querySelector('.home-left');
-          x.classList.add('invisible');
-          var x = document.querySelector('.home-right');
-          x.classList.add('invisible');
-          setTimeout(() => { var x = document.querySelector('.seccion');
-          x.classList.add('nodisp'); }, 1200);
-        }
-        function processfunc() {
-           setTimeout(() => { var x = document.querySelector('.process');
-          x.classList.add('corrector'); }, 1200);
-        }
-        function clientfunc() {
-            var x = document.querySelector('.process');
-          x.classList.add('nodisp');
-          setTimeout(() => { var x = document.querySelector('.clients');
-          x.classList.add('corrector'); }, 1200);
-        }
-        function aboutfunc() {
-          var x = document.querySelector('.clients');
-          x.classList.add('nodisp');
-          setTimeout(() => { var x = document.querySelector('.about-me');
-          x.classList.add('corrector'); }, 1200);
-            } 
-        function contactfunc() {
-          var x = document.querySelector('.about-me');
-          x.classList.add('nodisp');   
-          setTimeout(() => { var x = document.querySelector('.contact');
-          x.classList.add('corrector'); }, 1200);
-        }
-
-        function homefuncback() {
-          var x = document.querySelector('.seccion');
-          x.classList.remove('nodisp');
-          setTimeout(() => { var x = document.querySelector('.inicio');
-          x.classList.remove('chikito'); }, 0);
-          setTimeout(() => { var x = document.querySelector('.home-left');
-          x.classList.remove('invisible');}, 700);
-          setTimeout(() => { var x = document.querySelector('.home-right');
-          x.classList.remove('invisible');}, 700);
-          
-
-        }
-        function processfuncback() {
-           var x = document.querySelector('.process');
-          x.classList.remove('corrector');
-        }
-
-        function clientfuncback() {
-          var x = document.querySelector('.clients');
-          x.classList.remove('corrector');
-          setTimeout(() => {  var x = document.querySelector('.process');
-          x.classList.remove('nodisp');}, 1200);
-        }
-        function aboutfuncback() {
-         var x = document.querySelector('.about-me');
-          x.classList.remove('corrector');
-          setTimeout(() => { var x = document.querySelector('.clients');
-          x.classList.remove('nodisp');}, 1200);
-            } 
-        function contactfuncback() {
-          var x = document.querySelector('.contact');
-          x.classList.remove('corrector'); 
-          setTimeout(() => {  var x = document.querySelector('.about-me');
-          x.classList.remove('nodisp');}, 1200);
-        }
-
-      const proc = document.getElementById('process-btn');
-      proc.addEventListener('click', homefunc, false);
-        proc.addEventListener('click', processfunc, false);
-      const cli = document.getElementById('clients-btn');
-        cli.addEventListener('click', homefunc, false);
-        cli.addEventListener('click', clientfunc, false);
-      const abt = document.getElementById('about-btn');
-        abt.addEventListener('click', aboutfunc, false);
-        abt.addEventListener('click', homefunc, false);
-        abt.addEventListener('click', clientfunc, false);
-       const cnt = document.getElementById('contact-btn');
-        cnt.addEventListener('click', aboutfunc, false);
-        cnt.addEventListener('click', homefunc, false);
-        cnt.addEventListener('click', clientfunc, false);
-        cnt.addEventListener('click', contactfunc, false);
-      const procback = document.getElementById('process-goback');
-      procback.addEventListener('click', homefuncback, false);
-        procback.addEventListener('click', processfuncback, false);
-
-      const cliback = document.getElementById('clients-goback');
-        cliback.addEventListener('click', homefuncback, false);
-        cliback.addEventListener('click', clientfuncback, false);
-      const abtback = document.getElementById('about-goback');
-        abtback.addEventListener('click', aboutfuncback, false);
-        abtback.addEventListener('click', homefuncback, false);
-        abtback.addEventListener('click', clientfuncback, false);
-       const cntback = document.getElementById('contact-goback');
-        cntback.addEventListener('click', aboutfuncback, false);
-        cntback.addEventListener('click', homefuncback, false);
-        cntback.addEventListener('click', clientfuncback, false);
-        cntback.addEventListener('click', contactfuncback, false);
-    </script>
+    <script defer src="jquery-3.6.0.slim.min.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>

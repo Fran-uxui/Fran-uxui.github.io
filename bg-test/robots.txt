@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /font/
-Disallow: /img/
-Disallow: /404.html
