@@ -23,10 +23,12 @@
                 }
 
                 document.getElementById("price").innerHTML = price;
-                document.getElementById("priced").innerHTML = price - (price * 0.2) ;
+                document.getElementById("priced").innerHTML = price - (price * 0.2);
+                document.getElementById("pricechile").innerHTML = Math.round(((price - (price * 0.2)) * 850) / 100) *100;
             } else {
                 document.getElementById("price").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
                 document.getElementById("priced").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
+                document.getElementById("pricechile").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
             }
         }
     </script>
@@ -106,7 +108,11 @@
         </div>
         Precio con 20% descuento:
         <div id="priced">
+            <br>
+        </div> 
+    Precio chile con 20% descuento:
+    <div id="pricechile">
 
-        </div>
+    </div>
     </body>
 </html>
