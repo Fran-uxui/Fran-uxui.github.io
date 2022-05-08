@@ -23,8 +23,10 @@
                 }
 
                 document.getElementById("price").innerHTML = price;
+                document.getElementById("priced").innerHTML = price - (price * 0.2) ;
             } else {
                 document.getElementById("price").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
+                document.getElementById("priced").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
             }
         }
     </script>
@@ -100,8 +102,11 @@
         
         Precio:
         <div id="price">
+     <br>
+        </div>
+        Precio con 20% descuento:
+        <div id="priced">
 
         </div>
-    
     </body>
 </html>
