@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var costs = [ 
+                      7.05,7.05,7.05,7.05,
+                      7.05,7.05,7.05,7.05,
+                      8.8,8.8,8.8,8.8,
+                      10.3,10.3,10.3,10.3,
+                      12.35,12.35,12.35,12.35,
+                      14.7,18.8,26,36.76,];
+
+        function calc() {
+            var fromValue = document.getElementById("from").selectedIndex;
+
+            var toValue = document.getElementById("to").selectedIndex;
+
+            if (fromValue < toValue) {
+                var price = 0;
+
+                for (i = fromValue; i < toValue; i++) {
+                    price += costs[i];
+                }
+
+                document.getElementById("price").innerHTML = price;
+            } else {
+                document.getElementById("price").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
+            }
+        }
+    </script>
+</head>
+    <body>
+        de:
+        <select id="from" onchange="calc()">
+            <option>Hierro 4</option>
+            <option>Hierro 3</option>
+            <option>Hierro 2</option>
+            <option>Hierro 1</option>
+            
+            <option>Bronze 4</option>
+            <option>Bronze 3</option>
+            <option>Bronze 2</option>
+            <option>Bronze 1</option>
+            
+            <option>Plata 4</option>
+            <option>Plata 3</option>
+            <option>Plata 2</option>
+            <option>Plata 1</option>
+            
+            <option>Oro 4</option>
+            <option>Oro 3</option>
+            <option>Oro 2</option>
+            <option>Oro 1</option>
+            
+            <option>Platino 4</option>
+            <option>Platino 3</option>
+            <option>Platino 2</option>
+            <option>Platino 1</option>
+            
+            <option>Diamante 4</option>
+            <option>Diamante 3</option>
+            <option>Diamante 2</option>
+            <option>Diamante 1</option>
+        </select>
+
+        a:
+        <select id="to" onchange="calc()">
+            <option>Hierro 4</option>
+            <option>Hierro 3</option>
+            <option>Hierro 2</option>
+            <option>Hierro 1</option>
+            
+            <option>Bronze 4</option>
+            <option>Bronze 3</option>
+            <option>Bronze 2</option>
+            <option>Bronze 1</option>
+            
+            <option>Plata 4</option>
+            <option>Plata 3</option>
+            <option>Plata 2</option>
+            <option>Plata 1</option>
+            
+            <option>Oro 4</option>
+            <option>Oro 3</option>
+            <option>Oro 2</option>
+            <option>Oro 1</option>
+            
+            <option>Platino 4</option>
+            <option>Platino 3</option>
+            <option>Platino 2</option>
+            <option>Platino 1</option>
+            
+            <option>Diamante 4</option>
+            <option>Diamante 3</option>
+            <option>Diamante 2</option>
+            <option>Diamante 1</option>
+            <option>Master</option>
+        </select>
+        <br><br>
+        
+        Precio:
+        <div id="price">
+
+        </div>
+    
+    </body>
+</html>
