@@ -11,6 +11,11 @@
                       14.7,18.8,26,36.76,];
 
         function calc() {
+
+            var clp = 850;
+            var ars = 150;
+            var pen = 3.79;
+
             var fromValue = document.getElementById("from").selectedIndex;
 
             var toValue = document.getElementById("to").selectedIndex;
@@ -24,11 +29,15 @@
 
                 document.getElementById("price").innerHTML = price;
                 document.getElementById("priced").innerHTML = price - (price * 0.2);
-                document.getElementById("pricechile").innerHTML = Math.round(((price - (price * 0.2)) * 850) / 100) *100;
+                document.getElementById("pricechile").innerHTML = Math.round(((price - (price * 0.2)) * clp) / 100) *100;
+                document.getElementById("pricears").innerHTML = Math.round(((price - (price * 0.2)) * ars) / 100) *100;
+                document.getElementById("pricepen").innerHTML = Math.round(((price - (price * 0.2)) * pen) / 10) *10;
             } else {
                 document.getElementById("price").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
                 document.getElementById("priced").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
                 document.getElementById("pricechile").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
+                document.getElementById("pricears").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
+                document.getElementById("pricepen").innerHTML = 'El Elo de origen tiene que ser inferior al deseado';
             }
         }
     </script>
@@ -110,8 +119,16 @@
         <div id="priced">
             <br>
         </div> 
-    Precio chile con 20% descuento:
+    Precio Chile con 20% descuento:
     <div id="pricechile">
+<br>
+    </div>
+    Precio Argentina con 20% descuento:
+    <div id="pricears">
+        <br>
+    </div>
+    Precio Peru con 20% descuento:
+    <div id="pricepen">
 
     </div>
     </body>
