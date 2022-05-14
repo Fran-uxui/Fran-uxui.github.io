@@ -265,8 +265,42 @@ section {
 .clients > .content > .row > .project {
     height: 100%;
     width: 25%;
-    background: rgba(255, 255, 255, 0.603);
+    background: rgba(245, 245, 245, 0.671);
+    background-image: none;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in-out;
+  }
+  .clients > .content > .row > .project:hover > .client-logo-white{
+      opacity: 1;
+  }
+  .clients > .content > .row > .project:hover > .client-logo {
+    opacity: 0;
+}
+.client-logo {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+.client-logo-white {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+
+  .clients > .content > .row > .proj1:hover {
+    background: #B4CE2C!important;
+  }
+  .clients > .content > .row > .proj2:hover {
+    background: #3082e0!important;
+  }
+  .clients > .content > .row > .proj3:hover {
+    background: #222222!important;
+  }
+  .clients > .content > .row > .proj4:hover {
+    background: #0dcbff!important;
   }
 
 
@@ -450,6 +484,13 @@ section {
     .home-right {
         place-content: flex-start;
     }
+    .clients > .content > .row  {
+        flex-wrap: wrap;
+}
+    .clients > .content > .row > .project {
+        width: 49.5%;
+        height: 49.5%;
+}
 }
 .shape {
     position: absolute;
@@ -1326,9 +1367,9 @@ section {
     color: #3082e0!important;
 }
 .cabo::after{
-    color: #BAA10F!important;
+    color: #222222!important;
 }
 .eat::after{
-    color: #32F096!important;
+    color: #0dcbff!important;
 }
 
