@@ -11,10 +11,9 @@
     
 </head>
 <body>
-
+    <div class="loadingscreen" id="loadingscreen"><img src="img/loading.svg" alt=""></div>
     <div class="seccion">
         <div class="inicio">
-            
             <div class="home-left">
                 <div class="row">
                 <div class="photo"></div>
@@ -135,6 +134,16 @@
      
      <!-- Modals End -->
    </div>
+   <script>
+     window.onload = function() {
+     var x = document.querySelector('.loadingscreen');
+         x.classList.add('invisible');
+         setTimeout(() => {   
+          var x = document.querySelector('.loadingscreen');
+         x.classList.add('nodisp');
+         }, 300);
+        }
+   </script>
     <script defer src="jquery-3.6.0.slim.min.js"></script>
     <script defer src="script.js"></script>
 </body>
