@@ -1,13 +1,13 @@
 
-    $(document).ready(function() {
-
+    $(document).ready(function() { 
+      if (window.screen.width > 500) {
       var html = '';
       for (var i = 1; i <= 50; i++) {
         html += '<div class="shape-container--' + i + ' shape-animation"><div class="random-shape"></div></div>';
       }
       document.querySelector('.shape').innerHTML += html;
       
-      });
+      }}); 
       $(".proj1").hover(function(){
       $(".random-shape").addClass("hifu");
       }, function() {

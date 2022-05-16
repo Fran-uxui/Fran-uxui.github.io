@@ -192,6 +192,7 @@ section {
 .process {
     background: #E8E8E8;
     z-index: -3;
+    overflow: hidden;
 }
 .process > .content > .title > h2 { 
     color: #191919;
@@ -241,6 +242,7 @@ section {
 .clients {
     background: #E8E8E8;
     z-index: -4;
+    overflow: hidden;
 }
 
 .clients > .content > .title > h2 { 
@@ -528,6 +530,20 @@ section {
     padding: 0;
     padding-top: 1rem;
 }
+.process > .content > .row > .card > p {
+    font-size: 1rem;
+    display: none;
+}
+.process > .content > .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    gap: 10px;
+}  
+
+.process > .content > .row > .card:hover > p {
+  display: block;
+}  
 }
 .shape {
     position: absolute;
