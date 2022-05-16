@@ -136,12 +136,12 @@
    </div>
    <script>
      window.onload = function() {
-     var x = document.querySelector('.loadingscreen');
-         x.classList.add('invisible');
-         setTimeout(() => {   
+      setTimeout(() => { var x = document.querySelector('.loadingscreen');
+         x.classList.add('invisible'); }, 300);
+         setTimeout(() => {    
           var x = document.querySelector('.loadingscreen');
          x.classList.add('nodisp');
-         }, 300);
+         }, 600);
         }
    </script>
     <script defer src="jquery-3.6.0.slim.min.js"></script>
