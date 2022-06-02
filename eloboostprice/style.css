@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'SF-Pro-Display';
-    src: url("font/SFProDisplay-Semiboldv2.woff2") format("woff2");
+    src: url("font/sf-pro-display_semibold.woff2") format("woff2");
 }
 
 * {
@@ -110,38 +110,12 @@ h3 {
     z-index: 1;
 }
 
-.dropdown:hover {
-    color: #10CCFF;
-}
-
-#dropdown1:hover~#drop1cont {
+.visible {
     display: block!important;
 }
 
-#dropdown2:hover~#drop2cont {
-    display: block!important;
-}
-
-#dropdown3:hover~#drop3cont {
-    display: block!important;
-}
-
-#dropdown4:hover~#drop4cont {
-    display: block!important;
-}
-
-#dropdown5:hover~#drop5cont {
-    display: block!important;
-    min-width: 20.15rem;
-}
-
-#dropdown5~#drop5cont:hover {
-    display: block!important;
-    min-width: 20.15rem;
-}
-
-.dropdown-content:hover {
-    display: block!important;
+#drop5cont {
+    min-width: 20.1rem;
 }
 
 .materials {
@@ -219,6 +193,10 @@ div.moneda {
     background: rgba(0, 0, 0, 0.24);
 }
 
+.message>h2 {
+    padding: 1rem;
+}
+
 .bottom {
     background: rgb(22, 37, 45);
     background: linear-gradient(156deg, rgba(22, 37, 45, 1) 0%, rgba(14, 23, 28, 1) 100%);
@@ -254,6 +232,21 @@ div.moneda {
 
 .nodisp {
     display: none;
+}
+
+.contratar {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contratar>a {
+    text-decoration: none;
+    background: #10CCFF;
+    color: white;
+    font-size: 0.8rem;
+    padding: 1.2rem 0.5rem;
+    border: none;
+    cursor: pointer;
 }
 
 .questions {
@@ -293,6 +286,11 @@ div.moneda {
     border: rgba(255, 255, 255, 0.473) 1px solid;
 }
 
+.answers>p {
+    padding: 2rem;
+    text-align: center;
+}
+
 .contact {
     display: flex;
     justify-content: center;
@@ -324,6 +322,20 @@ div.moneda {
 
 .icon-contact {
     width: 15%;
+}
+
+.dropdown::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: none;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.3rem solid #10CCFF;
+    position: absolute;
+    right: 0.3rem;
+    top: 1rem;
+    transition: all .2s ease-out;
 }
 
 @media screen and (max-width: 600px) {

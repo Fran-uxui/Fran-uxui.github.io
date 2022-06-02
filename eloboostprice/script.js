@@ -55,28 +55,40 @@ window.elo2 = 1;
 window.elo3 = 1;
 window.elo4 = 1;
 
+function cleanOptions() {
+    document.getElementById('drop1cont').classList.remove("visible");
+    document.getElementById('drop2cont').classList.remove("visible");
+    document.getElementById('drop3cont').classList.remove("visible");
+    document.getElementById('drop4cont').classList.remove("visible");
+    document.getElementById('drop5cont').classList.remove("visible");
+}
+
 function reply_click(clicked_id) {
     window.elo = parseInt(clicked_id);
     var elocomp = elo2 + parseInt(clicked_id);
     document.getElementById('from').value = elocomp;
+    cleanOptions();
 }
 
 function reply_click2(clicked_id) {
     window.elo2 = parseInt(clicked_id);
     window.elo2comp = elo + parseInt(clicked_id);
     document.getElementById('from').value = elo2comp;
+    cleanOptions();
 }
 
 function reply_click3(clicked_id) {
     window.elo3 = parseInt(clicked_id);
     var elo3comp = elo4 + parseInt(clicked_id);
     document.getElementById('to').value = elo3comp;
+    cleanOptions();
 }
 
 function reply_click4(clicked_id) {
     window.elo4 = parseInt(clicked_id);
     window.elo4comp = elo3 + parseInt(clicked_id);
     document.getElementById('to').value = elo4comp;
+    cleanOptions();
 }
 
 function reply_click5(clicked) {
@@ -84,9 +96,8 @@ function reply_click5(clicked) {
     console.log(moneda)
     document.getElementsByClassName('priceext')[0].id = moneda;
     document.getElementsByName('priceog')[0].id = moneda + 'd';
+    cleanOptions();
 }
-
-
 
 
 
@@ -134,4 +145,43 @@ function active() {
 
 function activate(questid) {
     document.getElementById(questid).classList.add("clicked");
+}
+
+function openOptions(optionsid) {
+    var visexists = document.getElementsByClassName("visible");
+    if (visexists.length > 0) {
+        document.getElementById('drop1cont').classList.remove("visible");
+        document.getElementById('drop2cont').classList.remove("visible");
+        document.getElementById('drop3cont').classList.remove("visible");
+        document.getElementById('drop4cont').classList.remove("visible");
+        document.getElementById('drop5cont').classList.remove("visible");
+
+    } else {
+        document.getElementById('drop1cont').classList.remove("visible");
+        document.getElementById('drop2cont').classList.remove("visible");
+        document.getElementById('drop3cont').classList.remove("visible");
+        document.getElementById('drop4cont').classList.remove("visible");
+        document.getElementById('drop5cont').classList.remove("visible");
+        document.getElementById(optionsid).classList.add("visible");
+    }
+}
+
+
+document.getElementsByTagName('video')[0].onended = function() {
+    this.load();
+    this.play();
+};
+
+function replay() {
+    mivideo = getElementById('videol');
+    mivideo.currentTime = 0;
+    v = mivideo.currentSrc;
+    mivideo.src = '';
+    mivideo.src = v;
+    mivideo.play();
+}
+
+function nodisp() {
+    document.getElementById('message').classList.add("nodisp");
+    document.getElementById('message2').classList.remove("nodisp");
 }

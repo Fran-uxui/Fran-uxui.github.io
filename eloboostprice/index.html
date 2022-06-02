@@ -52,7 +52,7 @@
                         <option value="23">Diamante 2</option>
                         <option value="24">Diamante 1</option>
                     </select>
-                        <p class="dropdown materials" id="dropdown1">Hierro</p>
+                        <p class="dropdown materials" onClick="openOptions('drop1cont')" id="dropdown1">Hierro</p>
                         <ul class="options dropdown-content" id="drop1cont">
                             <li id="1" onClick="reply_click(this.id), drop1(this.innerHTML)" class="hierro">Hierro</li>
                             <li id="5" onClick="reply_click(this.id), drop1(this.innerHTML)" class="bronze">Bronze</li>
@@ -61,7 +61,7 @@
                             <li id="17" onClick="reply_click(this.id), drop1(this.innerHTML)" class="platino">Platino</li>
                             <li id="21" onClick="reply_click(this.id), drop1(this.innerHTML)" class="diamante">Diamante</li>
                         </ul>
-                        <p class="dropdown numbers" id="dropdown2">IV</p>
+                        <p class="dropdown numbers" id="dropdown2" onClick="openOptions('drop2cont')">IV</p>
                         <ul class="options dropdown-content" id="drop2cont">
                             <li id="0" onClick="reply_click2(this.id), drop2(this.innerHTML)">IV</li>
                             <li id="1" onClick="reply_click2(this.id), drop2(this.innerHTML)">III</li>
@@ -104,7 +104,7 @@
                         <option value="24">Diamante 1</option>
                         <option value="25">Master</option>
                     </select>
-                        <p class="dropdown materials" id="dropdown3">Hierro</p>
+                        <p class="dropdown materials" id="dropdown3" onClick="openOptions('drop3cont')">Hierro</p>
                         <ul class="options dropdown-content" id="drop3cont">
                             <li id="1" onClick="reply_click3(this.id), drop3(this.innerHTML)">Hierro</li>
                             <li id="5" onClick="reply_click3(this.id), drop3(this.innerHTML)">Bronze</li>
@@ -113,7 +113,7 @@
                             <li id="17" onClick="reply_click3(this.id), drop3(this.innerHTML)" class="platino">Platino</li>
                             <li id="21" onClick="reply_click3(this.id), drop3(this.innerHTML)" class="diamante">Diamante</li>
                         </ul>
-                        <p class="dropdown numbers" id="dropdown4">IV</p>
+                        <p class="dropdown numbers" id="dropdown4" onClick="openOptions('drop4cont')">IV</p>
                         <ul class="options dropdown-content" id="drop4cont">
                             <li id="0" onClick="reply_click4(this.id), drop4(this.innerHTML)">IV</li>
                             <li id="1" onClick="reply_click4(this.id), drop4(this.innerHTML)">III</li>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="moneda">
                         <h3>Moneda</h3>
-                        <p class="dropdown materials moneda" id="dropdown5">CLP (Pesos Chilenos)</p>
+                        <p class="dropdown materials moneda" id="dropdown5" onClick="openOptions('drop5cont')">CLP (Pesos Chilenos)</p>
                         <ul class="options dropdown-content" id="drop5cont">
                             <li onClick="reply_click5('clp'), drop5(this.innerHTML)">CLP (Pesos Chilenos)</li>
                             <li onClick="reply_click5('ars'), drop5(this.innerHTML)">ARS (Pesos Argentinos)</li>
@@ -133,7 +133,7 @@
                             <li onClick="reply_click5('usd'), drop5(this.innerHTML)">USD (Dolar Norteamericano)</li>
                         </ul>
                     </div>
-                    <div class="button-center"><button class="presupuestar" onClick="calc()">PRESUPUESTAR</button></div>
+                    <div class="button-center"><button class="presupuestar" onClick="calc(), nodisp()">PRESUPUESTAR</button></div>
 
 
                 </div>
@@ -141,8 +141,11 @@
                     <h1 class="equals"></h1>
                     <h3 name="priceog" class="oldprice" id="clpd"></h3>
                     <h1 class="priceext" id="clp"></h1>
-                    <div class="message">
-                        <h1>aaaaa</h1>
+                    <div id="message" class="message">
+                        <h2>Tu presupuesto aparecera aqui.</h2>
+                    </div>
+                    <div id="message2" class="contratar nodisp">
+                        <a href="">CONTRATAR</a>
                     </div>
                 </div>
             </div>
@@ -172,24 +175,27 @@
                 <div class="faqinside">
                     <div class="questions">
                         <button id="quest1" onclick="reset(), setanswer('ans1'), active(), activate('quest1')" class="clicked">Es el eloboost seguro?</button>
-                        <button id="quest2" onclick="reset(), setanswer('ans2'), active(), activate('quest2')">Puedo jugar con mi duo booster?</button>
+                        <button id="quest2" onclick="reset(), setanswer('ans2'), active(), activate('quest2')">Puedo jugar en dúo con el booster?</button>
                         <button id="quest3" onclick="reset(), setanswer('ans3'), active(), activate('quest3')">Como funcionan sus políticas de reembolso?</button>
                         <button id="quest4" onclick="reset(), setanswer('ans4'), active(), activate('quest4')">Mi cuenta está segura?</button>
                         <button id="quest5" onclick="reset(), setanswer('ans5'), active(), activate('quest5')">Puedo jugar con mi cuenta durante el Boost?</button>
                     </div>
                     <div class="answers">
-                        <p id="ans1">HOLASDDSAASD 1</p>
-                        <p id="ans2" class="nodisp">KASLNJLKASDJMASLK 2</p>
-                        <p id="ans3" class="nodisp"> KSDFJLSKJFDSK 3</p>
-                        <p id="ans4" class="nodisp">KDSLFNFSKDL 4</p>
-                        <p id="ans5" class="nodisp">KDSFLKNMDFKLS 5</p>
+                        <p id="ans1">Si. El eloboost es seguro, por lo que nunca han baneado ningún cliente. Es como jugar con un amigo mucho mejor que el jugador promedio "Puedo jugar en dúo con el booster?"</p>
+                        <p id="ans2" class="nodisp">Si por supuesto, puedes jugar en dúo seleccionando la opción de "Jugar con booster"</p>
+                        <p id="ans3" class="nodisp">Si el trabajo aún no ha comenzado y te has arrepentido te reembolsaremos sin ninguna pregunta, si el trabajo está en proceso, llegaremos a un acuerdo para el mismo</p>
+                        <p id="ans4" class="nodisp">Si, tu cuenta está segura. Todas las cuentas están vinculadas a un correo, el cual tiene todo el poder sobre la cuenta. Jamás te lo pediremos así que no hay riesgos</p>
+                        <p id="ans5" class="nodisp">¡Si! puedes jugar acordando un horario con nosotros o simplemente cuando el booster no esté subiendo. Recuerda no jugar clasificatorias durante el proceso</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="eloinfo">
             <div class="container">
-                <video class="videolol" width='100%' height="100%" preload="metadata" playsinline="" loop="" muted="" playsinline autoplay muted loop><source autoplay src="img/lolvideo.webm" type="video/webm"></video>
+                <video id="videol" class="videolol" onended="replay()" width='100%' height="100%" preload="metadata" playsinline="" loop="" muted="" playsinline autoplay muted loop>
+                    <source autoplay loop src="img/video.mp4" type="video/mp4">
+                    <source autoplay loop src="img/lolvideo.webm" type="video/webm">
+                </video>
                 <div class="inside">
                     <h1>QUE ES EL <br> ELO BOOST?</h1>
                     <p>El sistema de Elo de League of legends por ligas fue diseñado para emparejar jugadores del mismo nivel de habilidad para poder crear partidas balanceadas. Sin embargo, el sistema tiene algunas fallas. Ya que League of Legends es un
@@ -202,7 +208,7 @@
             <div class="container">
                 <div class="text">
                     <h1>CONTACTO</h1>
-                    <p>¡Podes escribirnos a traves de nuestro Telegram, tambien tenemos Instagram!</p>
+                    <p>¡Podes escribirnos a traves de nuestro WhatsApp, tambien tenemos Instagram!</p>
                 </div>
                 <div class="icons">
                     <a href="" class="icon-contact"><img src="img/instagram.svg" alt=""></a>
