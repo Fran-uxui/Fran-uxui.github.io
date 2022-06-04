@@ -51,9 +51,9 @@ function calc() {
 /* list script */
 
 window.elo = 1;
-window.elo2 = 1;
+window.elo2 = 0;
 window.elo3 = 1;
-window.elo4 = 1;
+window.elo4 = 0;
 
 function cleanOptions() {
     document.getElementById('drop1cont').classList.remove("visible");
@@ -184,4 +184,41 @@ function replay() {
 function nodisp() {
     document.getElementById('message').classList.add("nodisp");
     document.getElementById('message2').classList.remove("nodisp");
+}
+var drop1cont = 'Hierro';
+var drop2cont = 'IV';
+var drop3cont = 'Hierro';
+var drop4cont = 'IV';
+
+// when user clicks on any li element console logs the value of the li element 
+document.querySelectorAll('li').forEach(function(li) {
+    li.addEventListener('click', function() {
+        // checks the parent element of the li element id and logs it to the console 
+        var parent = (this.parentElement.id);
+        var parentstr = parent.toString();
+        // if parentstr is drop1cont or drop2cont or drop3cont or drop4cont then it changes the variable to the value of the li element 
+        if (parentstr == 'drop1cont') {
+            drop1cont = this.innerHTML;
+        }
+        if (parentstr == 'drop2cont') {
+            drop2cont = this.innerHTML;
+        }
+        if (parentstr == 'drop3cont') {
+            drop3cont = this.innerHTML;
+        }
+        if (parentstr == 'drop4cont') {
+            drop4cont = this.innerHTML;
+        }
+    });
+})
+
+// onclick url is https://api.whatsapp.com/send?phone=542262486758&text= 
+
+// creates a function named changemsg that takes the value of the variable drop1cont and drop2cont and drop3cont and drop4cont and concatenates adding them to the end of the url with %20 in between and logs it to the console 
+function changemsg() {
+    var url = 'https://api.whatsapp.com/send?phone=542262486758&text=' + 'Hola!%20Quiero%20contratar%20desde' + '%20' + drop1cont + '%20' + drop2cont + '%20' + 'a' + '%20' + drop3cont + '%20' + drop4cont + '%20' + 'por%20' + document.querySelector('.priceext').innerHTML.replace(/<span>/g, '').replace(/<\/span>/g, '');
+
+
+    // changes the href of id="urlcontratar" to the url 
+    document.getElementById('urlcontratar').href = url;
 }
