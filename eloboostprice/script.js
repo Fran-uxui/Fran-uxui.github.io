@@ -79,7 +79,18 @@ function reply_click2(clicked_id) {
 
 function reply_click3(clicked_id) {
     window.elo3 = parseInt(clicked_id);
-    var elo3comp = elo4 + parseInt(clicked_id);
+    if (elo3 < 25) {
+        var elo3comp = elo4 + parseInt(clicked_id);
+        console.log('not master')
+        document.getElementById('drop4cont').style = "";
+        document.getElementById('dropdown4').innerHTML = "IV";
+    } else {
+        var elo3comp = parseInt(clicked_id);
+        console.log('master')
+        document.getElementById('drop4cont').style = "display:none!important";
+        document.getElementById('dropdown4').innerHTML = "*"
+    }
+
     document.getElementById('to').value = elo3comp;
     cleanOptions();
 }
