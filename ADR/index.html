@@ -28,39 +28,49 @@
             </a>
         </ul>
     </nav>
-    <div class="home">
-        <video class="covervid-video" autoplay="" loop="" muted="" poster="img/2017es.jpg" title="Planilandia Agencia Creativa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: auto; width: 100%;">
-            <source src="http://www.planilandia.com/intro/2017.mp4" type="video/mp4">
-            <source src="http://www.planilandia.com/intro/2017.webm" type="video/webm">
-             
-          </video>
-    </div>
+
+    <video id="video-home" autoplay="" loop="" muted="" title="Planilandia Agencia Creativa">
+            <source src="img/web-1.mp4" type="video/mp4">
+        </video>
+
     <div class="gridbelow">
         <div class="item">
-            <video class="covervid-video" id="video4" loop="" muted="" onmouseover="playPause('video4')" onmouseleave="playPause('video4')" poster="img/2017es.jpg" title="Planilandia Agencia Creativa" style="height: auto; width: 100%;">
-                <source src="http://www.planilandia.com/intro/2017.mp4" type="video/mp4">
-                <source src="http://www.planilandia.com/intro/2017.webm" type="video/webm">
+            <div onmouseover="playPause('video4'), overlaydisolve('overlay4')" onmouseleave="playPause('video4'), overlayappear('overlay4')" id="overlay4" class="video-overlay">
+                <h1>CONOCENOS</h1>
+            </div>
+            <video class="covervid-video" id="video4" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/web-1.mp4" type="video/mp4">
+                
                  
               </video>
         </div>
         <div class="item">
-            <video class="covervid-video" id="video3" loop="" muted="" onmouseover="playPause('video3')" onmouseleave="playPause('video3')" poster="img/2017es.jpg" title="Planilandia Agencia Creativa" style="height: auto; width: 100%;">
-                <source src="http://www.planilandia.com/intro/2017.mp4" type="video/mp4">
-                <source src="http://www.planilandia.com/intro/2017.webm" type="video/webm">
+            <div class="video-overlay" onmouseover="playPause('video3'), overlaydisolve('overlay3')" onmouseleave="playPause('video3'), overlayappear('overlay3')" id="overlay3">
+                <h1>MERCADO FRESCO</h1>
+            </div>
+            <video class="covervid-video" id="video3" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/web-1.mp4" type="video/mp4">
+                
                  
               </video>
         </div>
         <div class="item">
-            <video class="covervid-video" id="video2" loop="" muted="" onmouseover="playPause('video2')" onmouseleave="playPause('video2')" poster="img/2017es.jpg" title="Planilandia Agencia Creativa" style="height: auto; width: 100%;">
-                <source src="http://www.planilandia.com/intro/2017.mp4" type="video/mp4">
-                <source src="http://www.planilandia.com/intro/2017.webm" type="video/webm">
+            <div class="video-overlay" onmouseover="playPause('video2'), overlaydisolve('overlay2')" onmouseleave="playPause('video2'), overlayappear('overlay2')" id="overlay2">
+                <h1>INDUSTRIAS</h1>
+            </div>
+            <video class="covervid-video" id="video2" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/web-1.mp4" type="video/mp4">
+                
                  
               </video>
         </div>
         <div class="item">
-            <video class="covervid-video" id="video1" onmouseover="playPause('video1')" onmouseleave="playPause('video1')" loop="" muted="" poster="img/2017es.jpg" title="Planilandia Agencia Creativa" style="height: auto; width: 100%;">
-                <source src="http://www.planilandia.com/intro/2017.mp4" type="video/mp4">
-                <source src="http://www.planilandia.com/intro/2017.webm" type="video/webm">
+            <div class="video-overlay" onmouseover="playPause('video1'), overlaydisolve('overlay1')" onmouseleave="playPause('video1'), overlayappear('overlay1')" id="overlay1">
+                <h1>CONTACTO</h1>
+            </div>
+            <video class="covervid-video" id="video1" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/web-1.mp4" type="video/mp4">
+                
                  
               </video>
         </div>
