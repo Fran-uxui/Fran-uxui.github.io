@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'sf-pro-display';
-    src: url(font/sf-pro-display_semibold.woff2) format('woff2');
-}
-
 * {
     margin: 0;
-    font-family: 'sf-pro-display';
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -30,8 +25,10 @@ nav {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-    z-index: 10;
+    padding: 1rem 0rem 1rem 0rem;
+    z-index: 9999;
+    background-color: transparent;
+    transition: background-color 500ms ease-in-out;
 }
 
 nav>ul {
@@ -72,7 +69,7 @@ nav>img {
     position: absolute;
     padding: 0;
     opacity: 1;
-    transition: opacity 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +77,21 @@ nav>img {
 
 .video-overlay>h1 {
     color: white;
+    transition: all 250ms ease-in-out;
+}
+
+.video-overlay:hover {
+    background: none;
+}
+
+.video-overlay:hover>h1 {
+    color: #74BB0D;
+}
+
+.home-overlay {
+    position: absolute;
+    z-index: 10;
+    background: url(img/pixel.png);
 }
 
 @media screen and (max-width: 600px) {

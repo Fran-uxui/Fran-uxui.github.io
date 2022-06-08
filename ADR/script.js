@@ -64,3 +64,27 @@
          link.classList.add('active');
      }
  }
+
+ // gets the video-home-overlay and makes the same size as the video-home video 
+ function getVideoOverlay() {
+     let videoOverlay = document.getElementById('video-home-overlay');
+     let video = document.getElementById('video-home');
+     videoOverlay.style.width = video.clientWidth + 'px';
+     videoOverlay.style.height = video.clientHeight + 'px';
+ }
+ window.onload = getVideoOverlay;
+ window.onresize = getVideoOverlay;
+
+
+ // changes the nav background color when the user scrolls down the page 
+ function changeNavBackground() {
+     let nav = document.getElementById('nav');
+     let navHeight = nav.clientHeight;
+     let scrollTop = window.pageYOffset;
+     if (scrollTop > navHeight) {
+         nav.style.backgroundColor = '#5a8e0b';
+     } else {
+         nav.style.backgroundColor = 'transparent';
+     }
+ }
+ window.onscroll = changeNavBackground;
