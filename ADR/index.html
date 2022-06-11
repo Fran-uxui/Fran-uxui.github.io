@@ -9,13 +9,16 @@
     <title>ADR</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="nav">
         <img src="img/logo.png" alt="">
         <ul>
+            <a href="">
+                <li>Inicio</li>
+            </a>
             <a href="">
                 <li>Conocenos</li>
             </a>
@@ -40,9 +43,10 @@
         <div class="item">
             <div onmouseover="playPause('video4')" onmouseleave="playPause('video4')" id="overlay4" class="video-overlay">
                 <h1>CONOCENOS</h1>
+                <h2>SOMOS ADR AGRICOLA</h2>
             </div>
-            <video class="covervid-video" id="video4" loop="" muted="" style="height: auto; width: 100%;">
-                <source src="img/web-1.mp4" type="video/mp4">
+            <video class="covervid-video" poster="img/home/conocenos-640x360.jpg" id="video4" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/home/conocenos-640x360.m4v" type="video/mp4">
                 
                  
               </video>
@@ -50,9 +54,10 @@
         <div class="item">
             <div class="video-overlay" onmouseover="playPause('video3')" onmouseleave="playPause('video3')" id="overlay3">
                 <h1>MERCADO FRESCO</h1>
+                <h2>NUESTRAS PAPAS</h2>
             </div>
-            <video class="covervid-video" id="video3" loop="" muted="" style="height: auto; width: 100%;">
-                <source src="img/web-1.mp4" type="video/mp4">
+            <video class="covervid-video" poster="img/home/Mercado-fresco-640x360.jpg" id="video3" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/home/Mercado-fresco-640x360.m4v" type="video/mp4">
                 
                  
               </video>
@@ -60,9 +65,10 @@
         <div class="item">
             <div class="video-overlay" onmouseover="playPause('video2')" onmouseleave="playPause('video2')" id="overlay2">
                 <h1>INDUSTRIAS</h1>
+                <h2>CALIDAD DESDE EL ORIGEN</h2>
             </div>
-            <video class="covervid-video" id="video2" loop="" muted="" style="height: auto; width: 100%;">
-                <source src="img/web-1.mp4" type="video/mp4">
+            <video class="covervid-video" poster="img/home/industria-640x360.jpg" id="video2" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/home/industria-640x360.m4v" type="video/mp4">
                 
                  
               </video>
@@ -70,13 +76,17 @@
         <div class="item">
             <div class="video-overlay" onmouseover="playPause('video1')" onmouseleave="playPause('video1')" id="overlay1">
                 <h1>CONTACTO</h1>
+                <h2>PODEMOS AYUDARTE</h2>
             </div>
-            <video class="covervid-video" id="video1" loop="" muted="" style="height: auto; width: 100%;">
-                <source src="img/web-1.mp4" type="video/mp4">
+            <video class="covervid-video" poster="img/home/contacto-640x360.jpg" id="video1" loop="" muted="" style="height: auto; width: 100%;">
+                <source src="img/home/contacto-640x360.m4v" type="video/mp4">
                 
                  
               </video>
         </div>
+    </div>
+    <div class="footer">
+        <p>ADRagricola.com - Balcarce, Buenos Aires, Argentina - 2022 Todos los derechos reservados</p>
     </div>
     <script src="script.js"></script>
 </body>

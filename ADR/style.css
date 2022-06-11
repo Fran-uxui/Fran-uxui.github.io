@@ -40,25 +40,43 @@ nav>ul {
 
 nav>ul>a {
     text-decoration: none;
-    color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul>a::after {
+    content: "";
+    align-self: center;
+    margin-left: 1rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #74BB0D;
+    border-radius: 100px;
+}
+
+nav>ul>a:nth-child(5):after {
+    display: none;
 }
 
 nav>img {
-    width: 10rem;
+    width: 13rem;
     margin-left: 3rem;
 }
 
 .gridbelow {
     width: 100%;
-    background: red;
+    background: #74BB0D;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: -4px;
 }
 
 .gridbelow>.item {
-    background: rgb(0, 0, 0);
+    background: #74BB0D;
     position: relative;
+    height: 100%;
 }
 
 .video-overlay {
@@ -71,13 +89,23 @@ nav>img {
     opacity: 1;
     transition: all 250ms ease-in-out;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .video-overlay>h1 {
     color: white;
     transition: all 250ms ease-in-out;
+    pointer-events: none;
+}
+
+.video-overlay>h2 {
+    color: white;
+    transition: all 250ms ease-in-out;
+    pointer-events: none;
+    font-weight: 300;
 }
 
 .video-overlay:hover {
@@ -88,10 +116,25 @@ nav>img {
     color: #74BB0D;
 }
 
+.video-overlay:hover>h2 {
+    color: #74BB0D;
+}
+
 .home-overlay {
     position: absolute;
     z-index: 10;
     background: url(img/pixel.png);
+}
+
+.footer {
+    width: 100%;
+    background: #74BB0D;
+    padding: 1rem;
+}
+
+.footer>p {
+    color: white;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {

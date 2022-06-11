@@ -53,18 +53,6 @@
      overlay.style.opacity = "100%";
  }
 
- var unl1 = "https://www.youtube.com/embed/QH2-TGUlwu4";
-
- // on first click adds class 'active' and on second click opens url in new tab
- function openLink(linkID) {
-     let link = document.getElementById(linkID);
-     if (link.classList.contains('active')) {
-         window.open(link.href, '_blank');
-     } else {
-         link.classList.add('active');
-     }
- }
-
  // gets the video-home-overlay and makes the same size as the video-home video 
  function getVideoOverlay() {
      let videoOverlay = document.getElementById('video-home-overlay');
@@ -82,7 +70,7 @@
      let navHeight = nav.clientHeight;
      let scrollTop = window.pageYOffset;
      if (scrollTop > navHeight) {
-         nav.style.backgroundColor = '#5a8e0b';
+         nav.style.backgroundColor = '#fff';
      } else {
          nav.style.backgroundColor = 'transparent';
      }
