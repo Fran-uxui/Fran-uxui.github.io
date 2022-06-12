@@ -46,6 +46,11 @@ nav>ul>a {
     align-items: center;
 }
 
+nav>ul>a>.active {
+    color: #74BB0D;
+    font-weight: 400;
+}
+
 nav>ul>a::after {
     content: "";
     align-self: center;
@@ -123,7 +128,7 @@ nav>img {
 .home-overlay {
     position: absolute;
     z-index: 10;
-    background: url(img/pixel.png);
+    background: url(/img/pixel.png);
 }
 
 .footer {
@@ -137,8 +142,103 @@ nav>img {
     font-weight: 400;
 }
 
+.gridbelow-2 {
+    width: 100%;
+    background: #74BB0D;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: -4px;
+}
+
+.gridbelow-2>.item {
+    background: #74BB0D;
+    position: relative;
+    height: auto;
+}
+
+.text-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.text-right>p {
+    color: white;
+}
+
+.banner-contacto {
+    background-color: #406b00;
+    background-image: url(/pages/videos/contacto-1280x720.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-contacto>h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.banner-contacto>h1::after {
+    content: "";
+    width: 5rem;
+    height: 2px;
+    background: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner-contacto>p {
+    color: white;
+}
+
+.gridcontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridcontacto>.item {
+    border: 1px rgb(194, 194, 194);
+    border-style: none solid solid none;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridcontacto>.item>h3 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridcontacto>.item>h3::after {
+    content: "";
+    width: 5rem;
+    height: 2px;
+    background: #74BB0D;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .gridbelow {
+        grid-template-columns: 1fr;
+    }
+    .gridbelow-2 {
+        grid-template-columns: 1fr;
+    }
+    .gridcontacto {
+        display: grid;
         grid-template-columns: 1fr;
     }
 }

@@ -66,13 +66,7 @@
 
  // changes the nav background color when the user scrolls down the page 
  function changeNavBackground() {
-     let nav = document.getElementById('nav');
-     let navHeight = nav.clientHeight;
-     let scrollTop = window.pageYOffset;
-     if (scrollTop > navHeight) {
-         nav.style.backgroundColor = '#fff';
-     } else {
-         nav.style.backgroundColor = 'transparent';
-     }
+     nav.style.backgroundColor = '#fff';
+
  }
- window.onscroll = changeNavBackground;
+ window.onload = changeNavBackground;
