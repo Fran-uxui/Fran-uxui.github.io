@@ -70,3 +70,16 @@
 
  }
  window.onload = changeNavBackground;
+
+ function openmenu() {
+     document.getElementById("open").style.display = "none";
+     document.getElementById("close").style.display = "block";
+     document.getElementById("nav").style.display = "flex";
+ }
+
+
+ function closemenu() {
+     document.getElementById("close").style.display = "none";
+     document.getElementById("open").style.display = "block";
+     document.getElementById("nav").style.display = "none";
+ }

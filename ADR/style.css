@@ -230,6 +230,10 @@ nav>img {
     margin-bottom: 1rem;
 }
 
+.burguer {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .gridbelow {
         grid-template-columns: 1fr;
@@ -240,5 +244,47 @@ nav>img {
     .gridcontacto {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    nav {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: #ffffff;
+    }
+    nav>ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0;
+        margin-top: 2rem;
+    }
+    nav>img {
+        margin-left: 0rem;
+        width: 10rem;
+    }
+    nav>ul>a::after {
+        display: none;
+    }
+    nav>ul>a>li {
+        font-size: 1.3rem;
+    }
+    .burguer {
+        display: flex;
+        z-index: 999999;
+        position: fixed;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .burguer>i {
+        padding: 1rem;
+        cursor: pointer;
+    }
+    #nav {
+        display: none;
     }
 }
