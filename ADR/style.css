@@ -125,21 +125,15 @@ nav>img {
     color: #74BB0D;
 }
 
-.home-overlay {
-    position: absolute;
-    z-index: 10;
-    background: url(/img/pixel.png);
-}
-
 .footer {
     width: 100%;
     background: #74BB0D;
-    padding: 1rem;
 }
 
 .footer>p {
     color: white;
     font-weight: 400;
+    padding: 1rem;
 }
 
 .gridbelow-2 {
@@ -276,6 +270,7 @@ nav>img {
     .burguer {
         display: flex;
         z-index: 999999;
+        transform: translateZ(99px);
         position: fixed;
         justify-content: flex-end;
         width: 100%;
