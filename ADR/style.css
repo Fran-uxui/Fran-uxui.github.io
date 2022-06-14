@@ -16,7 +16,7 @@ body {
 }
 
 .video-container {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
