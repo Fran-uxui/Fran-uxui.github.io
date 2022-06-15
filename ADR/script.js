@@ -63,14 +63,6 @@
  window.onload = getVideoOverlay;
  window.onresize = getVideoOverlay;
 
-
- // changes the nav background color when the user scrolls down the page 
- function changeNavBackground() {
-     nav.style.backgroundColor = '#fff';
-
- }
- window.onload = changeNavBackground;
-
  function openmenu() {
      document.getElementById("open").style.display = "none";
      document.getElementById("close").style.display = "block";
@@ -88,3 +80,24 @@
  function urldirect(url) {
      window.location.href = url;
  }
+
+ // onload the element loading id will decrease opacity to 0 and then display none
+ function loading() {
+     let loading = document.getElementById('loading');
+     // gets logo-loading and makes it width 15rem 
+     let logoLoading = document.getElementById('logo-loader');
+     logoLoading.style.width = '15rem';
+
+     //delay for 1 second 
+     setTimeout(function() {
+         loading.style.opacity = "0";
+         setTimeout(function() {
+             loading.style.display = "none";
+             nav.style.backgroundColor = '#fff';
+         }, 500);
+     }, 1000);
+     // delay for 1/4 second
+
+ }
+
+ window.onload = loading;
