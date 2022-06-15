@@ -83,3 +83,8 @@
      document.getElementById("open").style.display = "block";
      document.getElementById("nav").style.display = "none";
  }
+
+ // function on click urldirect, when the user clicks on the element the page will redirect with the url in the variable 
+ function urldirect(url) {
+     window.location.href = url;
+ }

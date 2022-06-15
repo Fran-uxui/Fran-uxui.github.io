@@ -272,7 +272,7 @@ nav>img {
         z-index: 999999;
         transform: translateZ(99px);
         position: fixed;
-        justify-content: flex-end;
+        justify-content: space-between;
         width: 100%;
     }
     .burguer>i {
