@@ -236,7 +236,7 @@ nav>img {
 }
 
 .banner-contacto {
-    background-image: url(/pages/videos/contacto2.jpg);
+    background-image: url(videos/contacto2.jpg);
     background-position: center;
     background-size: cover;
     height: 65vh;
