@@ -87,16 +87,9 @@
      // gets logo-loading and makes it width 15rem 
      let logoLoading = document.getElementById('logo-loader');
      logoLoading.style.width = '15rem';
-
-     //delay for 1 second 
-     setTimeout(function() {
          loading.style.opacity = "0";
-         setTimeout(function() {
-             loading.style.display = "none";
+         loading.style.display = "none";
              nav.style.backgroundColor = '#fff';
-         }, 0);
-     }, 0);
-     // delay for 1/4 second
 
  }
 
@@ -111,3 +104,5 @@
  }
 
  window.onload = loading;
+
+ 

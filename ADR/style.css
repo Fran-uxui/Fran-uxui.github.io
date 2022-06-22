@@ -417,4 +417,10 @@ transition: transform 250ms ease-in-out;
     .gridbelow-4>.item>video {
         width: 100%;
     }
+    .gridbelow-3>.item>video {
+        width: 100%;
+    }
+    .gridbelow-4>.inverse {
+        order: 1;
+    }
 }
