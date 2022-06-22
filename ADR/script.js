@@ -94,8 +94,8 @@
          setTimeout(function() {
              loading.style.display = "none";
              nav.style.backgroundColor = '#fff';
-         }, 500);
-     }, 1000);
+         }, 0);
+     }, 0);
      // delay for 1/4 second
 
  }

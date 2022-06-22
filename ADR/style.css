@@ -393,6 +393,7 @@ transition: transform 250ms ease-in-out;
         transform: translateZ(99px);
         position: fixed;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
     .burguer>i {
@@ -408,5 +409,12 @@ transition: transform 250ms ease-in-out;
     }
     .gridbelow-3 {
         grid-template-columns: 1fr;
+    }
+    .gridbelow-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .gridbelow-4>.item>video {
+        width: 100%;
     }
 }
