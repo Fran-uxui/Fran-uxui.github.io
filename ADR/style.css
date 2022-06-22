@@ -415,10 +415,16 @@ transition: transform 250ms ease-in-out;
     }
 
     .gridbelow-4>.item>video {
-        width: 100%;
+        min-height: 100%; 
+ min-width: 100%; 
+ height: auto !important;
+ width: auto !important; 
     }
     .gridbelow-3>.item>video {
-        width: 100%;
+        min-height: 100%; 
+        min-width: 100%; 
+        height: auto !important;
+        width: auto !important; 
     }
     .gridbelow-4>.inverse {
         order: 1;
