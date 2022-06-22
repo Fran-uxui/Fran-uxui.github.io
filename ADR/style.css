@@ -333,6 +333,14 @@ nav>img {
     display: block;
 }
 
+.mf-image {
+    background-image: url(img/mercado-fresco2.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+.mf-image>img {
+transition: transform 250ms ease-in-out;
+}
 @media screen and (max-width: 600px) {
     .gridbelow {
         grid-template-columns: 1fr;

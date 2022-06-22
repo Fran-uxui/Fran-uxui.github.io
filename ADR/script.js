@@ -100,4 +100,14 @@
 
  }
 
+
+
+ function moveimg(topimg) {
+    document.getElementById(topimg).style.transform = "translateX(-100%)";
+ }
+
+ function moveimgback(topimg) {
+    document.getElementById(topimg).style.transform = "translateX(0%)";
+ }
+
  window.onload = loading;
