@@ -236,33 +236,17 @@ nav>img {
 }
 
 .banner-contacto {
-    background-color: #406b00;
     background-image: url(/pages/videos/contacto2.jpg);
     background-position: center;
     background-size: cover;
-    background-blend-mode: luminosity;
-    height: 45vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.banner-contacto>h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
 
-.banner-contacto>h1::after {
-    content: "";
-    width: 5rem;
-    height: 2px;
-    background: #ffffff;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
 .banner-contacto>p {
     color: white;
@@ -276,10 +260,10 @@ nav>img {
 .gridcontacto>.item {
     border: 1px rgb(194, 194, 194);
     border-style: none solid solid none;
-    height: 22vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 3rem;
 }
 
 .gridcontacto>.item>h3 {

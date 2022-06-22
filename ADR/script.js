@@ -103,6 +103,4 @@
     document.getElementById(topimg).style.transform = "translateX(0%)";
  }
 
- window.onload = loading;
-
- 
+    window.onload = loading;
