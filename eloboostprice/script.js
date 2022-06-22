@@ -83,7 +83,7 @@ function reply_click3(clicked_id) {
         var elo3comp = elo4 + parseInt(clicked_id);
         console.log('not master')
         document.getElementById('drop4cont').style = "";
-        document.getElementById('dropdown4').innerHTML = "IV";
+
     } else {
         var elo3comp = parseInt(clicked_id);
         console.log('master')
@@ -140,6 +140,8 @@ function reset() {
     document.getElementById('ans3').classList.add("nodisp");
     document.getElementById('ans4').classList.add("nodisp");
     document.getElementById('ans5').classList.add("nodisp");
+    document.getElementById('ans6').classList.add("nodisp");
+    document.getElementById('ans7').classList.add("nodisp");
 }
 
 function setanswer(ans) {
@@ -152,6 +154,8 @@ function active() {
     document.getElementById('quest3').classList.remove("clicked");
     document.getElementById('quest4').classList.remove("clicked");
     document.getElementById('quest5').classList.remove("clicked");
+    document.getElementById('quest6').classList.remove("clicked");
+    document.getElementById('quest7').classList.remove("clicked");
 }
 
 function activate(questid) {
