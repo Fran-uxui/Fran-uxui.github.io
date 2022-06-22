@@ -340,7 +340,14 @@ nav>img {
 }
 .mf-image>img {
 transition: transform 250ms ease-in-out;
+
 }
+.gridbelow-4>.item>video {
+    width: 100%;
+   }
+   .gridbelow-3>.item>video {
+       width: 100%;
+   }
 @media screen and (max-width: 600px) {
     .gridbelow {
         grid-template-columns: 1fr;
