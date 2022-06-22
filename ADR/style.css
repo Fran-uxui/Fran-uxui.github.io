@@ -413,4 +413,13 @@ transition: transform 250ms ease-in-out;
     .gridbelow-4>.inverse {
         order: 1;
     }
+    .conocenos-text-left {
+        padding: 6rem 4rem 6rem 4rem;
+        align-items: flex-start;
+    }
+    .mf-text-left {
+        padding: 6rem 4rem 6rem 4rem;
+        align-items: flex-start;
+    }
+    
 }
