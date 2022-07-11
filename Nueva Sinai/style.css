@@ -12,7 +12,8 @@
     margin: 0;
 }
 
-/* nav */ 
+
+/* nav */
 
 nav {
     position: absolute;
@@ -21,22 +22,26 @@ nav {
     align-items: center;
     justify-content: center;
     padding-top: 1em;
+    z-index: 999;
 }
 
 nav>ul>a {
     text-decoration: none;
     color: #00ABCC;
 }
+
 nav>ul {
-  font-family: 'sf-pro-display';
-  display: flex;
-  list-style: none;
-  align-items: center;
-  margin-block-start:0;
-  padding-inline-start: 0;
-  gap: 1em;
+    font-family: 'sf-pro-display';
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    gap: 1em;
 }
-/* home */ 
+
+
+/* home */
 
 .home {
     width: 100%;
@@ -59,9 +64,11 @@ nav>ul {
     text-align: center;
     margin-top: 2rem;
 }
+
 .home>.inner>.presentacion>p {
     margin-bottom: 1rem;
 }
+
 .home>.inner>.presentacion>a {
     font-family: 'sf-pro-display';
     text-decoration: none;
@@ -71,7 +78,8 @@ nav>ul {
     border-radius: 300px;
 }
 
-/* CANALES */ 
+
+/* CANALES */
 
 .canales {
     display: flex;
@@ -84,7 +92,7 @@ nav>ul {
 h1 {
     color: #00ABCC;
     font-family: 'sf-pro-display';
-    display:block;
+    display: block;
 }
 
 .botonera {
@@ -99,6 +107,7 @@ h1 {
     filter: grayscale();
     opacity: 80%;
     transition: all 250ms ease-in-out;
+    cursor: pointer;
 }
 
 .botonera>img.active {
@@ -106,12 +115,15 @@ h1 {
     opacity: 100%;
     height: 1.5rem;
 }
+
 .info-canales {
-   width: 90%;
+    width: 90%;
 }
+
 .info-canales>.item {
     display: none;
 }
+
 .visible {
     display: flex!important;
 }
@@ -121,17 +133,21 @@ h1 {
     width: 70%;
     margin-top: 1rem;
 }
+
 .info-canales>.item {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 1.5rem;
 }
+
 .info-canales>.item>img {
     width: 70%;
 }
 
+
 /* PREGUNTAS FRECUENTES */
+
 .preguntas {
     display: flex;
     align-items: center;
@@ -139,6 +155,7 @@ h1 {
     flex-direction: column;
     margin-top: 2rem;
 }
+
 .preguntas>div {
     display: flex;
     align-items: center;
@@ -151,12 +168,13 @@ h1 {
     font-family: 'sf-pro-display';
     text-align: left;
     font-size: 1.2rem;
-    padding: 0.5em 1em ;
+    padding: 0.5em 1em;
     background: #9fe7f6;
     border-radius: 200px;
     color: rgb(60, 60, 60);
     margin-top: 1em;
     width: 100%;
+    cursor: pointer;
 }
 
 .respuesta {
@@ -172,4 +190,121 @@ h1 {
     font-size: 1rem;
     opacity: 100%;
     margin-top: 0.5em;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    background: #00ABCC;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacto>h1 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.icons>a>img {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+/* BLOG */
+
+.blog {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.grid-blog>a>img {
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.187);
+}
+
+
+/* RESPONSIVE PARA DESKTOP */
+
+@media screen and (min-width: 600px) {
+    .home>.inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+    .home>.inner>img {
+        width: 100%;
+    }
+    .botonera {
+        gap: 2rem;
+    }
+    .botonera>img {
+        height: 2rem;
+    }
+    .botonera>img.active {
+        height: 2.5rem;
+    }
+    .info-canales {
+        display: flex;
+        justify-content: center;
+    }
+    .info-canales>.item.visible {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .info-canales>.item>img {
+        width: 50%;
+    }
+    .info-canales>.item {
+        width: 40%;
+        gap: 2rem;
+    }
+    .info-canales>.item>p {
+        font-size: 1.4em;
+    }
+    .preguntas>div {
+        width: 60%;
+    }
+}
+
+
+/* fade in */
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 500ms ease-in-out, transform 600ms ease-in-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }

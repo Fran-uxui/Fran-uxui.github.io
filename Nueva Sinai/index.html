@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,50 @@
     <title>Nueva Sinai</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <ul>
-            <a href=""><li>Inicio</li></a>
-            <a href=""><li>Canales</li></a>
-            <a href=""><li>Preguntas</li></a>
-            <a href=""><li>Contacto</li></a>
+            <a href="#inicio">
+                <li>Inicio</li>
+            </a>
+            <a href="#canales">
+                <li>Canales</li>
+            </a>
+            <a href="#preguntas">
+                <li>Preguntas</li>
+            </a>
+            <a href="#blog">
+                <li>Blog</li>
+            </a>
+            <a href="#contacto">
+                <li>Contacto</li>
+            </a>
         </ul>
     </nav>
-    <div class="home">
-        <div class="inner">
+    <div id="inicio" class="home">
+        <div class="inner fade-in-section">
             <img src="img/logo.svg" alt="logo">
             <div class="presentacion">
-                <p>Somos Nueva Sinai, la empresa sudamericana de telecomunicaciones que ha creado un servicio específicamente para vos y tu familia con una gran variedad de canales y contenido. Los mejores canales deportivos y las mejores series y peliculas a tu disposición
+                <p>Somos Nueva Sinai, la empresa sudamericana de telecomunicaciones que ha creado un servicio específicamente para vos y tu familia con una gran variedad de canales y contenido. Los mejores canales deportivos y las mejores series y peliculas
+                    a tu disposición
                 </p>
                 <a href="">Contratar</a>
             </div>
         </div>
     </div>
-    <div class="canales">
-        <h1>Canales</h1> 
+    <div id="canales" class="canales fade-in-section">
+        <h1>Canales</h1>
         <div id="botonera" class="botonera">
-            <img id="btn-1" class="active" onclick="clickbotonera(), clickboton('btn-1')"  src="img/futbol-argentina.png" alt="">
-            <img id="btn-2"onclick="clickbotonera(), clickboton('btn-2')" src="img/futbol-paraguay.png" alt="">
-            <img id="btn-3"onclick="clickbotonera(), clickboton('btn-3')" src="img/disney.png" alt="">
-            <img id="btn-4"onclick="clickbotonera(), clickboton('btn-4')" src="img/noticias.png" alt="">
-            <img id="btn-5"onclick="clickbotonera(), clickboton('btn-5')" src="img/cine.png" alt="">
+            <img id="btn-1" class="active" onclick="clickbotonera(), clickboton('btn-1')" src="img/futbol-argentina.png" alt="">
+            <img id="btn-2" onclick="clickbotonera(), clickboton('btn-2')" src="img/futbol-paraguay.png" alt="">
+            <img id="btn-3" onclick="clickbotonera(), clickboton('btn-3')" src="img/disney.png" alt="">
+            <img id="btn-4" onclick="clickbotonera(), clickboton('btn-4')" src="img/noticias.png" alt="">
+            <img id="btn-5" onclick="clickbotonera(), clickboton('btn-5')" src="img/cine.png" alt="">
             <img id="btn-6" onclick="clickbotonera(), clickboton('btn-6')" src="img/series.png" alt="">
         </div>
         <div class="info-canales" id="info-canales">
-            <div class="item visible" id="btn-1item" >
+            <div class="item visible" id="btn-1item">
                 <img src="img/argentina.jpg" alt="">
                 <p>Disfruta de La liga nacional y todos los torneos locales desde la comodidad de tu hogar</p>
             </div>
@@ -64,7 +78,7 @@
 
         </div>
     </div>
-    <div class="preguntas">
+    <div id="preguntas" class="preguntas fade-in-section">
         <h1>Preguntas frecuentes</h1>
         <div>
             <p class="pregunta" onclick="clickpreguntas('resp1')">¿Como hago para contratar el servicio?</p>
@@ -72,13 +86,28 @@
         </div>
         <div>
             <p class="pregunta" onclick="clickpreguntas('resp2')">¿Cómo solicito la instalación?</p>
-            <p class="respuesta" id="resp2" >Al contratar nuestro servicio automáticamente se coordinara una fecha de instalación</p>
+            <p class="respuesta" id="resp2">Al contratar nuestro servicio automáticamente se coordinara una fecha de instalación</p>
         </div>
     </div>
-    <div class="contacto"></div>
+    <div id="blog" class="blog fade-in-section">
+        <h1>Blog</h1>
+        <div class="grid-blog">
+            <a target="_blank" href="https://www.instagram.com/p/CfrKAsMuWlk/?utm_source=ig_web_copy_link" target>
+                <img src="img/post-1.jpeg" alt="">
+            </a>
+
+        </div>
+    </div>
+    <div id="contacto" class="contacto">
+        <h1>Contacto</h1>
+        <div class="icons">
+            <a href="https://www.instagram.com/nuevasinai/" target="_blank"><img src="img/ig.svg" alt=""></a>
+            <a href=""><img src="img/wpp.svg" alt=""></a>
+        </div>
+    </div>
     <div class="footer"></div>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
