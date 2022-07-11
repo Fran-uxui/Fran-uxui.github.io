@@ -251,6 +251,9 @@ h1 {
 /* RESPONSIVE PARA DESKTOP */
 
 @media screen and (min-width: 600px) {
+    .home {
+        background-image: url(img/bg.jpg);
+    }
     .home>.inner {
         display: grid;
         grid-template-columns: 1fr 1fr;
