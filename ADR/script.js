@@ -12,7 +12,8 @@
      }
  }
 
- // mantains the video in a 16:9 aspect ratio based on the viewport height
+
+
  function maintainAspectRatio() {
      let myVideo = document.getElementById('video-home');
      let videoHeight = myVideo.clientHeight;
@@ -38,7 +39,7 @@
 
  // activates maintainAspectRatio() when the window is resized
  window.onresize = maintainAspectRatio;
- window.onload = maintainAspectRatio;
+
 
 
 
@@ -54,14 +55,8 @@
  }
 
  // gets the video-home-overlay and makes the same size as the video-home video 
- function getVideoOverlay() {
-     let videoOverlay = document.getElementById('video-home-overlay');
-     let video = document.getElementById('video-home');
-     videoOverlay.style.width = video.clientWidth + 'px';
-     videoOverlay.style.height = video.clientHeight + 'px';
- }
- window.onload = getVideoOverlay;
- window.onresize = getVideoOverlay;
+
+
 
  function openmenu() {
      document.getElementById("open").style.display = "none";
@@ -87,20 +82,23 @@
      // gets logo-loading and makes it width 15rem 
      let logoLoading = document.getElementById('logo-loader');
      logoLoading.style.width = '15rem';
-         loading.style.opacity = "0";
-         loading.style.display = "none";
-             nav.style.backgroundColor = '#fff';
+     loading.style.opacity = "0";
+     loading.style.display = "none";
+     nav.style.backgroundColor = '#fff';
 
  }
 
 
 
  function moveimg(topimg) {
-    document.getElementById(topimg).style.transform = "translateX(-100%)";
+     document.getElementById(topimg).style.transform = "translateX(-100%)";
  }
 
  function moveimgback(topimg) {
-    document.getElementById(topimg).style.transform = "translateX(0%)";
+     document.getElementById(topimg).style.transform = "translateX(0%)";
  }
 
-    window.onload = loading;
+ window.onload = function() {
+     loading();
+     maintainAspectRatio();
+ }
