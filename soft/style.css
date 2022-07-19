@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'sf-pro-light';
+    src: url(font/sf-pro-text_light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'sf-pro-bold';
+    src: url(font/sf-pro-display_semibold.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    color: white;
+}
+
+.loader {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 100vh;
+    transition: all 700ms;
+}
+
+.loader>img {
+    width: 30%;
+    transition: all 500ms;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'sf-pro-bold';
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-family: 'sf-pro-light';
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 10px black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home>img {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.galeria {
+    padding: 2rem;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.item>img {
+    width: 100%;
+}
+
+.videos {
+    padding: 2rem;
+}
