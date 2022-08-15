@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    font-family: 'sf-display';
+}
+
+
+@font-face {
+    font-family: 'sf-display';
+    src: url('font/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sf-text';
+    src: url('font/sf-pro-text_light.woff2') format('woff2');
+}
+
+.loading {
+    position: fixed;
+    background: #EF3C5A;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms ease-in-out;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.logo-container {
+    overflow: hidden;
+    transition: width 500ms ease-in-out;
+}
+
+.logo-load {
+    width: 21rem;
+    height: 4.5rem;
+}
+
+
+/*  Nav */
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    position: fixed;
+    transition: opacity 500ms ease-in-out;
+}
+
+.nav>img {
+    width: 10rem;
+}
+
+.nav>ul {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+.nav>ul>a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    list-style: none;
+}
+
+
+
+/* END NAV */
+
+
+/* HOME */
+
+.home {
+    height: 90vh;
+    width: 100%;
+    background-image: url(img/bg-mobile.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home>h1 {
+    font-family: 'sf-text';
+    text-align: center;
+    color: #EF3C5A;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    text-rendering: optimizelegibility;
+}
+.gradient {
+    height: 10vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(252,224,246,1) 100%);
+}
+
+/* plantillas */ 
+.diseños {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diseños>h1{
+    color: #EF3C5A;
+}
+
+.diseños>.botones>button {
+    aspect-ratio: 1/1;
+    width: 4rem;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(198, 198, 198);
+    margin: 0.7rem;
+    transition: background-color 250ms ease-in-out;
+ }
+
+ .diseños>.botones>button.active {
+   background:#EF3C5A;
+ }
+ 
+
+ .tarjetas>.tarjeta {
+    background-color: rgb(198, 198, 198);
+    width: 90vw;
+    aspect-ratio: 16/7.5;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+ }
+
+ .tarjeta>.tarjeta-inside>h2{
+    margin:1rem;
+    color: white;
+ }
+
+ .tarjeta>.tarjeta-inside {
+    position: absolute;
+    display: flex;
+   width: 90vw;
+   justify-content: space-between;
+   align-items: center;
+   background: rgb(0, 0, 0);
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.547) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+ .tarjeta>img {
+    width: 100%;
+    display: block;
+ }
+
+ .tarjeta>.tarjeta-inside>button {
+    margin:1rem;
+    border:solid 1px #EF3C5A;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: white;
+    border-radius: 300px;
+ }
+
+
+ a.ver-todo{
+    background-color: #EF3C5A;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 300px;
+    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+ }
+
+ .whitespa {
+    height: 30vh;
+ }
+
+
+/* preguntas */ 
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.preguntas>h1 {
+    color: #EF3C5A;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.preguntas>button {
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #EF3C5A;
+    background-color: #fce0f6;
+    border: none;
+    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    border-radius: 300px;
+    z-index: 10;
+}
+
+.preguntas>p {
+    overflow: hidden;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 0rem 0rem 1.5rem 1.5rem ;
+    transition: all 250ms ease-in-out;
+    text-align: left;
+    background: #FFF2FC;
+    padding: 1rem 1.3rem;
+    padding-top: 3rem;
+    margin-top: -1.7rem;
+    color: rgb(49, 49, 49);
+   font-size: 1.2rem;
+   font-family: 'sf-text';
+}
+
+.preguntas>p.desactivado {
+    font-size: 0rem;
+    padding: 0rem 1.3rem;
+    margin-top: 0;
+    opacity: 0;
+    
+}
