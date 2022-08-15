@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div id="loading">
         <img id="logo-loader" class="logo-loader" src="img/logo-2.png" alt="">
     </div>
@@ -42,13 +43,13 @@
         </ul>
     </nav>
     <div class="video-container">
-        <video loading="lazy" id="video-home" autoplay="autoplay" loop="" muted="" playsinline title="ADR Agricola">
-            <source src="img/web-1.mp4" type="video/mp4">
+        <video loading="lazy" id="video-home" poster="img/portada-home.jpg" autoplay="autoplay" loop="" muted="" playsinline title="ADR Agricola">
+            <source id="home-xl-video" src="img/web-1.mp4" type="video/mp4">
         </video>
     </div>
     <div class="gridbelow">
         <div class="item" style="background-image: url(img/home/conocenos-640x360.jpg); background-size: contain;background-position: center;">
-            <div onmouseover="playPause('video4')" onmouseleave="playPause('video4')" onclick="urldirect('pages/conocenos.html')" id="overlay4" class="video-overlay">
+            <div onmouseover="playPause('video4')" onmouseleave="playPause('video4')" onclick="urldirect('pages/conocenos.html')" ontouchstart="playPause('video4')" ontouchend="playPause('video4')" id="overlay4" class="video-overlay">
                 <h1>CONOCENOS</h1>
                 <h2>SOMOS ADR AGRICOLA</h2>
             </div>
@@ -59,7 +60,7 @@
               </video>
         </div>
         <div class="item" style="background-image: url(img/home/Mercado-fresco-640x360.jpg); background-size: contain;background-position: center;">
-            <div class="video-overlay" onmouseover="playPause('video3')" onmouseleave="playPause('video3')" onclick="urldirect('pages/mercado-fresco.html')" id="overlay3">
+            <div class="video-overlay" ontouchstart="playPause('video3')" ontouchend="playPause('video3')" onmouseover="playPause('video3')" onmouseleave="playPause('video3')" onclick="urldirect('pages/mercado-fresco.html')" id="overlay3">
                 <h1>MERCADO FRESCO</h1>
                 <h2>NUESTRAS PAPAS</h2>
             </div>
@@ -70,7 +71,7 @@
               </video>
         </div>
         <div class="item" style="background-image: url(img/home/industria-640x360.jpg); background-size: contain;background-position: center;">
-            <div class="video-overlay" onmouseover="playPause('video2')" onmouseleave="playPause('video2')" onclick="urldirect('pages/industrias.html')" id="overlay2">
+            <div class="video-overlay" onmouseover="playPause('video2')" onmouseleave="playPause('video2')" ontouchstart="playPause('video2')" ontouchend="playPause('video2')" onclick="urldirect('pages/industrias.html')" id="overlay2">
                 <h1>INDUSTRIAS</h1>
                 <h2>CALIDAD DESDE EL ORIGEN</h2>
             </div>
@@ -81,7 +82,7 @@
               </video>
         </div>
         <div class="item" style="background-image: url(img/home/contacto-640x360.jpg); background-size: contain;background-position: center;">
-            <div class="video-overlay" onmouseover="playPause('video1')" onmouseleave="playPause('video1')" onclick="urldirect('pages/contacto.html')" id="overlay1">
+            <div class="video-overlay" onmouseover="playPause('video1')" oontouchstart="playPause('video1')" ontouchend="playPause('video1')" onmouseleave="playPause('video1')" onclick="urldirect('pages/contacto.html')" id="overlay1">
                 <h1>CONTACTO</h1>
                 <h2>PODEMOS AYUDARTE</h2>
             </div>

@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* INICIO */
+
+.inicio {
+    height: 100vh;
+    max-height: 100vh;
+    justify-content: flex-end;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.inicio>img {
+    width: 100%;
+    height: 100%;
+    background: grey;
+}
+
+.inicio>h1 {
+    position: absolute;
+    padding-bottom: 2rem;
+}
+
+
+/* Texto principal */
+
+.texto-principal>img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: grey;
+}
+
+
+/* Donde y Cuando */
+
+.donde-cuando>p {
+    text-align: center;
+}
+
+.donde-cuando>iframe {
+    aspect-ratio: 16/9;
+}
+
+
+/* ELLA Y EL */
+
+.ella-el {
+    padding: 1rem;
+}
+
+.ella-el>img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background: grey;
+}
+
+
+/* DRESSCODE */
+
+
+/* Regalos */
+
+
+/* ASISTENCIA */
+
+.asistencia>a {
+    padding: 0.5em 1em;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* fade in */
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 500ms ease-in-out, transform 600ms ease-in-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'medium';
+    src: url(../fonts/HelveticaNeue-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(../fonts/HelveticaNeue-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'main';
+    src: url(../fonts/HelveticaNeue.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/homemade-apple.woff2) format('woff2');
+}
+
+h1 {
+    font-family: 'bold';
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'medium';
+}
+
+h3 {
+    font-family: 'main';
+}
+
+p {
+    font-family: 'light';
+}
+
+a {
+    font-family: 'light';
+}

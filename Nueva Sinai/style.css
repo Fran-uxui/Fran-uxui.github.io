@@ -248,6 +248,27 @@ h1 {
 }
 
 
+/* COBERTURA */
+
+.cobertura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.cobertura>img {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.cobertura>p {
+    width: 90%;
+    font-family: 'sf-pro-text';
+}
+
+
 /* RESPONSIVE PARA DESKTOP */
 
 @media screen and (min-width: 600px) {
@@ -291,6 +312,13 @@ h1 {
         font-size: 1.4em;
     }
     .preguntas>div {
+        width: 60%;
+    }
+    .cobertura>img {
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .cobertura>p {
         width: 60%;
     }
 }

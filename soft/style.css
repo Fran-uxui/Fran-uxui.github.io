@@ -20,6 +20,8 @@
     justify-content: center;
     background: black;
     height: 100vh;
+    width: 100%;
+    opacity: 100%;
     transition: all 700ms;
 }
 
@@ -47,7 +49,7 @@ p {
     background-image: url(img/1.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0px 0px 100px 10px black;
+    box-shadow: inset 0px 0px 80px 15px black;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -55,7 +57,7 @@ p {
 
 .home>img {
     width: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 }
 
 .presentacion {
@@ -81,4 +83,72 @@ p {
 
 .videos {
     padding: 2rem;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons>a {
+    width: 20%;
+    cursor: pointer;
+}
+
+.icons>a>img {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .loader>img {
+        width: 15%;
+    }
+    .home>img {
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    .presentacion {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .galeria {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .grid-galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .videos {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .videos>h1 {
+        position: absolute;
+    }
+    .videos>iframe:nth-child(2) {
+        margin-top: 3rem;
+    }
+    .videos>iframe:nth-child(3) {
+        margin-top: 3rem;
+    }
+    .contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icons {
+        width: 40%
+    }
 }

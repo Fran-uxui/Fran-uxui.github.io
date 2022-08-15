@@ -85,7 +85,6 @@
      loading.style.opacity = "0";
      loading.style.display = "none";
      nav.style.backgroundColor = '#fff';
-
  }
 
 
@@ -98,7 +97,20 @@
      document.getElementById(topimg).style.transform = "translateX(0%)";
  }
 
+ function changesrc() {
+     document.getElementById('home-xl-video').src = 'img/web-1.mp4';
+     document.getElementById('video-home').play();
+ }
+
  window.onload = function() {
-     loading();
+
      maintainAspectRatio();
  }
+
+ document.addEventListener("DOMContentLoaded", function() {
+     setTimeout(function() {
+         loading();
+     }, 800);
+
+
+ });
